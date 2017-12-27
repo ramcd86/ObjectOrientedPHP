@@ -12,9 +12,16 @@
  * Hawaii Zone Pizza = echoPizzaType(), echoCheese(), echoHam(), echoPineapple(), echoTomatoSauce(), echoPizzaBase();
  * VEGETAble Pizza = echoPizzaType(), echoTomatoSauce(), echoPineapple(), echoSweetcorn();
  */
+/**
+ * Pixel Fries = echoSeasoning(), echoFries();
+ * Polygon Fries = echoSeasoning(), echoLargeFries();
+ * Terminal Taco Fries  = echoCheese(), echoChilli(), echoFries();
+ * C DOS Cheese Fries = echoCheese(), echoGarlic(), echoLargeFries();
+ */
 
 include ('burger.class.php');
 include ('pizza.class.php');
+include ('fries.class.php');
 
 class Menu {
 
@@ -121,6 +128,56 @@ public function vegetablePizza() {
     );
     echo "</br></br>";
 }
+
+/**
+ * Pixel Fries = echoSeasoning(), echoFries();
+ * Polygon Fries = echoSeasoning(), echoLargeFries();
+ * Terminal Taco Fries  = echoCheese(), echoChilli(), echoFries();
+ * C DOS Cheese Fries = echoCheese(), echoGarlic(), echoLargeFries();
+ */
+
+public function pixelFries() {
+    $pixelFriesArray = array(
+        $pixelFries = new Fries("Pixel Fries"),
+        $pixelFries->echoFriesType(),
+        $pixelFries->echoSeasoning(),
+        $pixelFries->echoFries()
+    );
+    echo "</br></br>";
+}
+
+public function polygonFries() {
+    $polygonFriessArray = array(
+        $polygonFries = new Fries("Polygon Fries"),
+        $polygonFries->echoFriesType(),
+        $polygonFries->echoSeasoning(),
+        $polygonFries->echoLargeFries()
+    );
+    echo "</br></br>";
+}
+
+public function terminalTacoFries() {
+    $terminalTacoFriesArray = array(
+        $terminalTacoFries = new Fries("Terminal Taco Fries"),
+        $terminalTacoFries->echoFriesType(),
+        $terminalTacoFries->echoCheese(),
+        $terminalTacoFries->echoChilli(),
+        $terminalTacoFries->echoFries()
+    );
+    echo "</br></br>";
+}
+
+public function cDOSCheeseFries() {
+    $cDOSCheeseFriesArray = array(
+        $cDOSCheeseFries = new Fries("C DOS Cheese Fries"),
+        $cDOSCheeseFries->echoFriesType(),
+        $cDOSCheeseFries->echoCheese(),
+        $cDOSCheeseFries->echoGarlic(),
+        $cDOSCheeseFries->echoFries()
+    );
+    echo "</br></br>";
+}
+
 }
 
 ?>

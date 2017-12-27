@@ -3,65 +3,58 @@
 
 // Burger object spawn template for pixel.Pizza burgers!
 
-class Burger {
+class Fries {
 
-    private $burgerType;
-    private $burgerBun;
-    private $beefPatty;
-    private $doubleBeefPatty;
+    private $friesType;
+    private $fries;
+    private $largeFries;
     private $cheese;
-    private $lettuce;
-    private $burgerSauce;
-    private $bbqSauce;
+    private $pixelPepperSeasoning;
+    private $emeraldHillChilli;
+    private $gitGarlicMayo;
 
-    public function __construct($burgerType) {
-    $this->burgerType = $burgerType;
-    $this->burgerBun = $burgerBun;
-    $this->beefPatty = $beefPatty;
-    $this->doubleBeefPatty = $doubleBeefPatty;
+    public function __construct($friesType) {
+    $this->friesType = $friesType;
+    $this->fries = $fries;
+    $this->largeFries = $largeFries;
     $this->cheese = $cheese;
-    $this->lettuce = $lettuce;
-    $this->burgerSauce = $burgerSauce;
-    $this->bbqSauce = $bbqSauce;
+    $this->pixelPepperSeasoning = $pixelPepperSeasoning;
+    $this->emeraldHillChilli = $emeraldHillChilli;
+    $this->gitGarlicMayo = $gitGarlicMayo;
     }
 
-    public function echoBurgerType() {
-        echo "<h1>You have ordered the ".$this->burgerType." which contains:</h1> </br>";
-    }
-
-    public function echoBeefPatty() {
-        $this->beefPatty = "<h3>A fresh ground Pixel Patty,</h3> </br>";
-        echo $this->beefPatty;
-    }
-
-    public function echoDoubleBeefPatty() {
-        $this->doubleBeefPatty = "<h3>A set of Two Pixel patties,</h3> </br>";
-        echo $this->doubleBeefPatty;
+    public function echoFriesType() {
+        echo "<h1>You have ordered the ".$this->friesType." which contains:</h1> </br>";
     }
 
     public function echoCheese() {
-        $this->cheese = "<h3>A slice of C DOS Cheddar,</h3> </br>";
+        $this->cheese = "<h3>A topping of melted C DOS Cheddar,</h3> </br>";
         echo $this->cheese;
     }
 
-    public function echoLettuce() {
-        $this->lettuce = "<h3>A sprinkle of crisp Digitized Iceberg Lettuce,</h3> </br>";
-        echo $this->lettuce;
+    public function echoSeasoning() {
+        $this->pixelPepperSeasoning = "<h3>A hearty sprinkling of our famous Pixel Pepper Seasoning,</h3> </br>";
+        echo $this->pixelPepperSeasoning;
     }
 
-    public function echoBurgerSauce() {
-        $this->burgerSauce = "<h3>A tablespoon of our home made Open Source Burger Sauce,</h3> </br>";
-        echo $this->burgerSauce;
+    public function echoChilli() {
+        $this->emeraldHillChilli = "<h3>A heap of our eye-watering Emerald Hill Chilli,</h3> </br>";
+        echo $this->emeraldHillChilli;
     }
 
-    public function echoBBQSauce() {
-        $this->bbqSauce = "<h3>A tablespoon of our authentic Binary BBQ sauce,</h3> </br>";
-        echo $this->bbqSauce;
+    public function echoGarlic() {
+        $this->gitGarlicMayo = "<h3>A pull request of our Git Garlic Mayo</h3> </br>";
+        echo $this->gitGarlicMayo;
     }
 
-    public function echoBurgerBun() {
-        $this->burgerBun = "<h3>And encapsulated in a Sesame Sprite Bun!</h3>";
-        echo $this->burgerBun;
+    public function echoFries() {
+        $this->fries = "<h3>On top of our freshly cut Pixel Fries!</h3> </br>";
+        echo $this->fries;
+    }
+
+    public function echoLargeFries() {
+        $this->largeFries = "<h3>On top of a generous double portion of our Pixel Fries!</h3>";
+        echo $this->largeFries;
     }
 
 }

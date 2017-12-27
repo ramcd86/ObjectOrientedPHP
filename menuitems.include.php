@@ -42,4 +42,24 @@ function vegetablePizza() {
     $order->vegetablePizza();
 }
 
+function pixelFries() {
+    $order = new Menu();
+    $order->pixelFries();
+}
+
+function polygonFries() {
+    $order = new Menu();
+    $order->polygonFries();
+}
+
+function terminalTacoFries() {
+    $order = new Menu();
+    $order->terminalTacoFries();
+}
+
+function cDOSCheeseFries() {
+    $order = new Menu();
+    $order->cDOSCheeseFries();
+}
+
 ?>
