@@ -18,40 +18,56 @@ $totPrice = 0;
 
 if (isset($_POST["pixelBurger"]) && $_POST["pixelBurger"] == Yes ) {
     echo pixelBurger();
-    $itemCount + 1;
-    $totPrice + 3 * (int)$_POST["pixelBurgCount"];
+    $itemCount  = $itemCount + 1;
+    $totPrice = $totPrice + 3 * (int)$_POST["pixelBurgCount"];
     echo "<h2></br>Quantity: " . $_POST["pixelBurgCount"] . "</br></h2>";
     echo "<h2>Price: &#8364;" . 3 * (int)$_POST["pixelBurgCount"] . ".00</h2>";
 }
 
 if (isset($_POST["extraLifePixelBurger"]) && $_POST["extraLifePixelBurger"] == Yes ) {
     echo extraLifePixelBurger();
-    $itemCount + 1;
-    $totPrice + 4 * (int)$_POST["extraLifePixelBurgCount"];
+    $itemCount = $itemCount + 1;
+    $totPrice = $totPrice + 4 * (int)$_POST["extraLifePixelBurgCount"];
     echo "<h2></br>Quantity: " . $_POST["extraLifePixelBurgCount"] . "</br></h2>";
     echo "<h2>Price: &#8364;" . 4 * (int)$_POST["extraLifePixelBurgCount"] . ".00</h2>";
 }
 
 if (isset($_POST["theBigByte"]) && $_POST["theBigByte"] == Yes ) {
     echo theBigByte();
-    $itemCount + 1;
-    $totPrice + 5 * (int)$_POST["theBigByteCount"];
+    $itemCount = $itemCount + 1;
+    $totPrice = $totPrice + 5 * (int)$_POST["theBigByteCount"];
     echo "<h2></br>Quantity: " . $_POST["theBigByteCount"] . "</br></h2>";
     echo "<h2>Price: &#8364;" . 5 * (int)$_POST["theBigByteCount"] . ".00</h2>";
 }
 
 if (isset($_POST["theTexasDownload"]) && $_POST["theTexasDownload"] == Yes ) {
     echo theTexasDownload();
-    $itemCount + 1;
-    $totPrice + 5 * (int)$_POST["theTexasDownloadCount"];
+    $itemCount = $itemCount + 1;
+    $totPrice = $totPrice + 4 * (int)$_POST["theTexasDownloadCount"];
     echo "<h2></br>Quantity: " . $_POST["theTexasDownloadCount"] . "</br></h2>";
-    echo "<h2>Price: &#8364;" . 5 * (int)$_POST["theTexasDownloadCount"] . ".00</h2>";
+    echo "<h2>Price: &#8364;" . 4 * (int)$_POST["theTexasDownloadCount"] . ".00</h2>";
 }
 
-if ( $itemCount <= 3) {
-    echo "Your total is: " . $totPrice;
+if (isset($_POST["cDOSCheesePizza"]) && $_POST["cDOSCheesePizza"] == Yes ) {
+    echo cDOSCheesePizza();
+    $itemCount = $itemCount + 1;
+    $totPrice = $totPrice + 8 * (int)$_POST["cDOSCheesePizzaCount"];
+    echo "<h2></br>Quantity: " . $_POST["cDOSCheesePizzaCount"] . "</br></h2>";
+    echo "<h2>Price: &#8364;" . 8 * (int)$_POST["cDOSCheesePizzaCount"] . ".00</h2>";
+}
+
+if (isset($_POST["pepperoniParserPizza"]) && $_POST["pepperoniParserPizza"] == Yes ) {
+    echo pepperoniParserPizza();
+    $itemCount = $itemCount + 1;
+    $totPrice = $totPrice + 10 * (int)$_POST["pepperoniParserPizzaCount"];
+    echo "<h2></br>Quantity: " . $_POST["pepperoniParserPizzaCount"] . "</br></h2>";
+    echo "<h2>Price: &#8364;" . 10 * (int)$_POST["pepperoniParserPizzaCount"] . ".00</h2>";
+}
+
+if ( $itemCount > 3) {
+    echo "Your total is: &#8364;" . number_format($totPrice = $totPrice / 100 * 90, 2, '.', ' ');
 } else {
-    echo "Your total is: " . $totPrice;
+    echo "Your total is: &#8364;" . number_format($totPrice, 2, '.', ' ');
 }
 
 ?>
