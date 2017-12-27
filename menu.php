@@ -113,6 +113,38 @@ include ('menuitems.include.php');
           document.getElementById("pepperoniParserPizzaPrice").value = 10 + ".00";
         };
       };
+
+      function hawaiiZonePizzaPlus(value){
+        var hawaiiZonePizzaPrice = document.getElementById("hawaiiZonePizzaPrice").value;
+      document.getElementById("hawaiiZonePizzaCount").value++;
+      document.getElementById("hawaiiZonePizzaPrice").value = parseInt(hawaiiZonePizzaPrice) + 11 + ".00";
+      };
+      function hawaiiZonePizzaMinus(value){
+        var hawaiiZonePizzaPrice = document.getElementById("hawaiiZonePizzaPrice").value;
+        var hawaiiZonePizzaCount = document.getElementById("hawaiiZonePizzaCount").value;
+      document.getElementById("hawaiiZonePizzaCount").value--;
+      document.getElementById("hawaiiZonePizzaPrice").value = parseInt(hawaiiZonePizzaPrice) - 11 + ".00";
+        if  ( hawaiiZonePizzaCount <= 1 ) { 
+          document.getElementById("hawaiiZonePizzaCount").value = 1;
+          document.getElementById("hawaiiZonePizzaPrice").value = 11 + ".00";
+        };
+      };
+
+      function vegetablePizzaPlus(value){
+        var vegetablePizzaPrice = document.getElementById("vegetablePizzaPrice").value;
+      document.getElementById("vegetablePizzaCount").value++;
+      document.getElementById("vegetablePizzaPrice").value = parseInt(vegetablePizzaPrice) + 11 + ".00";
+      };
+      function vegetablePizzaMinus(value){
+        var vegetablePizzaPrice = document.getElementById("vegetablePizzaPrice").value;
+        var vegetablePizzaCount = document.getElementById("vegetablePizzaCount").value;
+      document.getElementById("vegetablePizzaCount").value--;
+      document.getElementById("vegetablePizzaPrice").value = parseInt(vegetablePizzaPrice) - 11 + ".00";
+        if  ( vegetablePizzaCount <= 1 ) { 
+          document.getElementById("vegetablePizzaCount").value = 1;
+          document.getElementById("vegetablePizzaPrice").value = 11 + ".00";
+        };
+      };
 </script>
 <form action="order.php" method="POST">
 <!--
@@ -194,6 +226,32 @@ amount:
 <input type="button" onclick="pepperoniParserPizzaMinus()" value="-">
 </br>
 Price: <input type="text" id="pepperoniParserPizzaPrice" name="pepperoniParserPizzaPrice" value="10.00" readonly>
+    </br>
+    </br>
+          <!-- hawaiiZonePizza order area -->
+The Hawaii Zone Pizza <input type="checkbox" name="hawaiiZonePizza" value="Yes"></br>
+amount: 
+</br>
+<input type="button" onclick="hawaiiZonePizzaPlus()" value="+">
+</br>
+<input type="text" id="hawaiiZonePizzaCount" name="hawaiiZonePizzaCount" value="1">
+</br>
+<input type="button" onclick="hawaiiZonePizzaMinus()" value="-">
+</br>
+Price: <input type="text" id="hawaiiZonePizzaPrice" name="hawaiiZonePizzaPrice" value="11.00" readonly>
+    </br>
+    </br>
+          <!-- vegetablePizza order area -->
+The VEGETAble Pizza <input type="checkbox" name="vegetablePizza" value="Yes"></br>
+amount: 
+</br>
+<input type="button" onclick="vegetablePizzaPlus()" value="+">
+</br>
+<input type="text" id="vegetablePizzaCount" name="vegetablePizzaCount" value="1">
+</br>
+<input type="button" onclick="vegetablePizzaMinus()" value="-">
+</br>
+Price: <input type="text" id="vegetablePizzaPrice" name="vegetablePizzaPrice" value="11.00" readonly>
     </br>
     </br>
 <!-- Submit --> 

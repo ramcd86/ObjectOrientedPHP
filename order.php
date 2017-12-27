@@ -64,6 +64,22 @@ if (isset($_POST["pepperoniParserPizza"]) && $_POST["pepperoniParserPizza"] == Y
     echo "<h2>Price: &#8364;" . 10 * (int)$_POST["pepperoniParserPizzaCount"] . ".00</h2>";
 }
 
+if (isset($_POST["hawaiiZonePizza"]) && $_POST["hawaiiZonePizza"] == Yes ) {
+    echo hawaiiZonePizza();
+    $itemCount = $itemCount + 1;
+    $totPrice = $totPrice + 11 * (int)$_POST["hawaiiZonePizzaCount"];
+    echo "<h2></br>Quantity: " . $_POST["hawaiiZonePizzaCount"] . "</br></h2>";
+    echo "<h2>Price: &#8364;" . 11 * (int)$_POST["hawaiiZonePizzaCount"] . ".00</h2>";
+}
+
+if (isset($_POST["vegetablePizza"]) && $_POST["vegetablePizza"] == Yes ) {
+    echo vegetablePizza();
+    $itemCount = $itemCount + 1;
+    $totPrice = $totPrice + 11 * (int)$_POST["vegetablePizzaCount"];
+    echo "<h2></br>Quantity: " . $_POST["vegetablePizzaCount"] . "</br></h2>";
+    echo "<h2>Price: &#8364;" . 11 * (int)$_POST["vegetablePizzaCount"] . ".00</h2>";
+}
+
 if ( $itemCount > 3) {
     echo "Your total is: &#8364;" . number_format($totPrice = $totPrice / 100 * 90, 2, '.', ' ');
 } else {
