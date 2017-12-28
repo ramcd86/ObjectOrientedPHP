@@ -22,6 +22,7 @@
 include ('burger.class.php');
 include ('pizza.class.php');
 include ('fries.class.php');
+include ('extras.class.php');
 
 class Menu {
 
@@ -174,6 +175,42 @@ public function cDOSCheeseFries() {
         $cDOSCheeseFries->echoCheese(),
         $cDOSCheeseFries->echoGarlic(),
         $cDOSCheeseFries->echoFries()
+    );
+    echo "</br></br>";
+}
+
+public function pixelCola() {
+    $pixelColaArray = array(
+        $pixelCola = new Extras("Pixel Cola"),
+        $pixelCola->echoExtrasType(),
+        $pixelCola->echoCola()
+    );
+    echo "</br></br>";
+}
+
+public function pixelOrange() {
+    $pixelOrangeArray = array(
+        $pixelOrange = new Extras("Pixel Orange"),
+        $pixelOrange->echoExtrasType(),
+        $pixelOrange->echoOrange()
+    );
+    echo "</br></br>";
+}
+
+public function pixelIceCream() {
+    $pixelIceCreamArray = array(
+        $pixelIceCream = new Extras("Pixel Ice Cream"),
+        $pixelIceCream->echoExtrasType(),
+        $pixelIceCream->echoIceCream()
+    );
+    echo "</br></br>";
+}
+
+public function pixelCookies() {
+    $pixelCookiesArray = array(
+        $pixelCookies = new Extras("Pixel Cookies"),
+        $pixelCookies->echoExtrasType(),
+        $pixelCookies->echoCookies()
     );
     echo "</br></br>";
 }

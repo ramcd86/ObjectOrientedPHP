@@ -62,4 +62,24 @@ function cDOSCheeseFries() {
     $order->cDOSCheeseFries();
 }
 
+function pixelCola() {
+    $order = new Menu();
+    $order->pixelCola();
+}
+
+function pixelOrange() {
+    $order = new Menu();
+    $order->pixelOrange();
+}
+
+function pixelIceCream() {
+    $order = new Menu();
+    $order->pixelIceCream();
+}
+
+function pixelCookies() {
+    $order = new Menu();
+    $order->pixelCookies();
+}
+
 ?>

@@ -96,6 +96,54 @@ if (isset($_POST["polygonFries"]) && $_POST["polygonFries"] == Yes ) {
     echo "<h2>Price: &#8364;" . 3 * (int)$_POST["polygonFriesCount"] . ".00</h2>";
 }
 
+if (isset($_POST["terminalTacoFries"]) && $_POST["terminalTacoFries"] == Yes ) {
+    echo terminalTacoFries();
+    $itemCount = $itemCount + 1;
+    $totPrice = $totPrice + 4 * (int)$_POST["terminalTacoFriesCount"];
+    echo "<h2></br>Quantity: " . $_POST["terminalTacoFriesCount"] . "</br></h2>";
+    echo "<h2>Price: &#8364;" . 4 * (int)$_POST["terminalTacoFriesCount"] . ".00</h2>";
+}
+
+if (isset($_POST["cDOSCheeseFries"]) && $_POST["cDOSCheeseFries"] == Yes ) {
+    echo cDOSCheeseFries();
+    $itemCount = $itemCount + 1;
+    $totPrice = $totPrice + 4 * (int)$_POST["cDOSCheeseFriesCount"];
+    echo "<h2></br>Quantity: " . $_POST["cDOSCheeseFriesCount"] . "</br></h2>";
+    echo "<h2>Price: &#8364;" . 4 * (int)$_POST["terminalTacoFriesCount"] . ".00</h2>";
+}
+
+if (isset($_POST["pixelCola"]) && $_POST["pixelCola"] == Yes ) {
+    echo pixelCola();
+    $itemCount = $itemCount + 1;
+    $totPrice = $totPrice + 1 * (int)$_POST["pixelColaCount"];
+    echo "<h2></br>Quantity: " . $_POST["pixelColaCount"] . "</br></h2>";
+    echo "<h2>Price: &#8364;" . 1 * (int)$_POST["pixelColaCount"] . ".00</h2>";
+}
+
+if (isset($_POST["pixelOrange"]) && $_POST["pixelOrange"] == Yes ) {
+    echo pixelOrange();
+    $itemCount = $itemCount + 1;
+    $totPrice = $totPrice + 1 * (int)$_POST["pixelOrangeCount"];
+    echo "<h2></br>Quantity: " . $_POST["pixelOrangeCount"] . "</br></h2>";
+    echo "<h2>Price: &#8364;" . 1 * (int)$_POST["pixelOrangeCount"] . ".00</h2>";
+}
+
+if (isset($_POST["pixelIceCream"]) && $_POST["pixelIceCream"] == Yes ) {
+    echo pixelIceCream();
+    $itemCount = $itemCount + 1;
+    $totPrice = $totPrice + 3 * (int)$_POST["pixelIceCreamCount"];
+    echo "<h2></br>Quantity: " . $_POST["pixelIceCreamCount"] . "</br></h2>";
+    echo "<h2>Price: &#8364;" . 3 * (int)$_POST["pixelIceCreamCount"] . ".00</h2>";
+}
+
+if (isset($_POST["pixelCookies"]) && $_POST["pixelCookies"] == Yes ) {
+    echo pixelCookies();
+    $itemCount = $itemCount + 1;
+    $totPrice = $totPrice + 3 * (int)$_POST["pixelCookiesCount"];
+    echo "<h2></br>Quantity: " . $_POST["pixelCookiesCount"] . "</br></h2>";
+    echo "<h2>Price: &#8364;" . 3 * (int)$_POST["pixelCookiesCount"] . ".00</h2>";
+}
+
 if ( $itemCount > 3) {
     echo "Your total is: &#8364;" . number_format($totPrice = $totPrice / 100 * 90, 2, '.', ' ');
 } else {

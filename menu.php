@@ -43,6 +43,32 @@ amount:
 Price: <input type="text" id="pixelFriesPrice" name="pixelFriesPrice" value="2.00" readonly>
     </br>
     </br>
+          <!-- terminalTacoFries order area -->
+Terminal Taco Fries <input type="checkbox" name="terminalTacoFries" value="Yes"></br>
+amount: 
+</br>
+<input type="button" onclick="terminalTacoFriesPlus()" value="+">
+</br>
+<input type="text" id="terminalTacoFriesCount" name="terminalTacoFriesCount" value="1">
+</br>
+<input type="button" onclick="terminalTacoFriesMinus()" value="-">
+</br>
+Price: <input type="text" id="terminalTacoFriesPrice" name="terminalTacoFriesPrice" value="4.00" readonly>
+    </br>
+    </br>
+          <!-- cDOSCheeseFries order area -->
+C DOS Cheese Fries <input type="checkbox" name="cDOSCheeseFries" value="Yes"></br>
+amount: 
+</br>
+<input type="button" onclick="cDOSCheeseFriesPlus()" value="+">
+</br>
+<input type="text" id="cDOSCheeseFriesCount" name="cDOSCheeseFriesCount" value="1">
+</br>
+<input type="button" onclick="cDOSCheeseFriesMinus()" value="-">
+</br>
+Price: <input type="text" id="cDOSCheeseFriesPrice" name="cDOSCheeseFriesPrice" value="4.00" readonly>
+    </br>
+    </br>
 <!--
 Pixel Burger Order Area
 -->
@@ -148,6 +174,58 @@ amount:
 <input type="button" onclick="vegetablePizzaMinus()" value="-">
 </br>
 Price: <input type="text" id="vegetablePizzaPrice" name="vegetablePizzaPrice" value="11.00" readonly>
+    </br>
+    </br>
+          <!-- pixelCola order area -->
+Pixel Cola <input type="checkbox" name="pixelCola" value="Yes"></br>
+amount: 
+</br>
+<input type="button" onclick="pixelColaPlus()" value="+">
+</br>
+<input type="text" id="pixelColaCount" name="pixelColaCount" value="1">
+</br>
+<input type="button" onclick="pixelColaMinus()" value="-">
+</br>
+Price: <input type="text" id="pixelColaPrice" name="pixelColaPrice" value="1.00" readonly>
+    </br>
+    </br>
+          <!-- pixelOrange order area -->
+Pixel Orange <input type="checkbox" name="pixelOrange" value="Yes"></br>
+amount: 
+</br>
+<input type="button" onclick="pixelOrangePlus()" value="+">
+</br>
+<input type="text" id="pixelOrangeCount" name="pixelOrangeCount" value="1">
+</br>
+<input type="button" onclick="pixelOrangeMinus()" value="-">
+</br>
+Price: <input type="text" id="pixelOrangePrice" name="pixelOrangePrice" value="1.00" readonly>
+    </br>
+    </br>
+          <!-- pixelIceCream order area -->
+Pixel Ice Cream <input type="checkbox" name="pixelIceCream" value="Yes"></br>
+amount: 
+</br>
+<input type="button" onclick="pixelIceCreamPlus()" value="+">
+</br>
+<input type="text" id="pixelIceCreamCount" name="pixelIceCreamCount" value="1">
+</br>
+<input type="button" onclick="pixelIceCreamMinus()" value="-">
+</br>
+Price: <input type="text" id="pixelIceCreamPrice" name="pixelIceCreamPrice" value="3.00" readonly>
+    </br>
+    </br>
+          <!-- pixelCookies order area -->
+Pixel Cookies <input type="checkbox" name="pixelCookies" value="Yes"></br>
+amount: 
+</br>
+<input type="button" onclick="pixelCookiesPlus()" value="+">
+</br>
+<input type="text" id="pixelCookiesCount" name="pixelCookiesCount" value="1">
+</br>
+<input type="button" onclick="pixelCookiesMinus()" value="-">
+</br>
+Price: <input type="text" id="pixelCookiesPrice" name="pixelCookiesPrice" value="3.00" readonly>
     </br>
     </br>
 <!-- Submit --> 

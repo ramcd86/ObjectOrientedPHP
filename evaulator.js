@@ -172,3 +172,105 @@
             document.getElementById("polygonFriesPrice").value = 3 + ".00";
         };
     };
+
+    function terminalTacoFriesPlus(value) {
+        var terminalTacoFriesPrice = document.getElementById("terminalTacoFriesPrice").value;
+        document.getElementById("terminalTacoFriesCount").value++;
+        document.getElementById("terminalTacoFriesPrice").value = parseInt(terminalTacoFriesPrice) + 4 + ".00";
+    };
+
+    function terminalTacoFriesMinus(value) {
+        var terminalTacoFriesPrice = document.getElementById("terminalTacoFriesPrice").value;
+        var terminalTacoFriesCount = document.getElementById("terminalTacoFriesCount").value;
+        document.getElementById("terminalTacoFriesCount").value--;
+        document.getElementById("terminalTacoFriesPrice").value = parseInt(terminalTacoFriesPrice) - 4 + ".00";
+        if (terminalTacoFriesCount <= 1) {
+            document.getElementById("terminalTacoFriesCount").value = 1;
+            document.getElementById("terminalTacoFriesPrice").value = 4 + ".00";
+        };
+    };
+
+    function cDOSCheeseFriesPlus(value) {
+        var cDOSCheeseFriesPrice = document.getElementById("cDOSCheeseFriesPrice").value;
+        document.getElementById("cDOSCheeseFriesCount").value++;
+        document.getElementById("cDOSCheeseFriesPrice").value = parseInt(cDOSCheeseFriesPrice) + 4 + ".00";
+    };
+
+    function cDOSCheeseFriesMinus(value) {
+        var cDOSCheeseFriesPrice = document.getElementById("cDOSCheeseFriesPrice").value;
+        var cDOSCheeseFriesCount = document.getElementById("cDOSCheeseFriesCount").value;
+        document.getElementById("cDOSCheeseFriesCount").value--;
+        document.getElementById("cDOSCheeseFriesPrice").value = parseInt(cDOSCheeseFriesPrice) - 4 + ".00";
+        if (cDOSCheeseFriesCount <= 1) {
+            document.getElementById("cDOSCheeseFriesCount").value = 1;
+            document.getElementById("cDOSCheeseFriesPrice").value = 4 + ".00";
+        };
+    };
+
+    function pixelColaPlus(value) {
+        var pixelColaPrice = document.getElementById("pixelColaPrice").value;
+        document.getElementById("pixelColaCount").value++;
+        document.getElementById("pixelColaPrice").value = parseInt(pixelColaPrice) + 1 + ".00";
+    };
+
+    function pixelColaMinus(value) {
+        var pixelColaPrice = document.getElementById("pixelColaPrice").value;
+        var pixelColaCount = document.getElementById("pixelColaCount").value;
+        document.getElementById("pixelColaCount").value--;
+        document.getElementById("pixelColaPrice").value = parseInt(pixelColaPrice) - 1 + ".00";
+        if (pixelColaCount <= 1) {
+            document.getElementById("pixelColaCount").value = 1;
+            document.getElementById("pixelColaPrice").value = 1 + ".00";
+        };
+    };
+
+    function pixelOrangePlus(value) {
+        var pixelOrangePrice = document.getElementById("pixelOrangePrice").value;
+        document.getElementById("pixelOrangeCount").value++;
+        document.getElementById("pixelOrangePrice").value = parseInt(pixelOrangePrice) + 1 + ".00";
+    };
+
+    function pixelOrangeMinus(value) {
+        var pixelOrangePrice = document.getElementById("pixelOrangePrice").value;
+        var pixelOrangeCount = document.getElementById("pixelOrangeCount").value;
+        document.getElementById("pixelOrangeCount").value--;
+        document.getElementById("pixelOrangePrice").value = parseInt(pixelOrangePrice) - 1 + ".00";
+        if (pixelOrangeCount <= 1) {
+            document.getElementById("pixelOrangeCount").value = 1;
+            document.getElementById("pixelOrangePrice").value = 1 + ".00";
+        };
+    };
+
+    function pixelIceCreamPlus(value) {
+        var pixelIceCreamPrice = document.getElementById("pixelIceCreamPrice").value;
+        document.getElementById("pixelIceCreamCount").value++;
+        document.getElementById("pixelIceCreamPrice").value = parseInt(pixelIceCreamPrice) + 3 + ".00";
+    };
+
+    function pixelIceCreamMinus(value) {
+        var pixelIceCreamPrice = document.getElementById("pixelIceCreamPrice").value;
+        var pixelIceCreamCount = document.getElementById("pixelIceCreamCount").value;
+        document.getElementById("pixelIceCreamCount").value--;
+        document.getElementById("pixelIceCreamPrice").value = parseInt(pixelIceCreamPrice) - 3 + ".00";
+        if (pixelIceCreamCount <= 1) {
+            document.getElementById("pixelIceCreamCount").value = 1;
+            document.getElementById("pixelIceCreamPrice").value = 3 + ".00";
+        };
+    };
+
+    function pixelCookiesPlus(value) {
+        var pixelCookiesPrice = document.getElementById("pixelCookiesPrice").value;
+        document.getElementById("pixelCookiesCount").value++;
+        document.getElementById("pixelCookiesPrice").value = parseInt(pixelCookiesPrice) + 3 + ".00";
+    };
+
+    function pixelCookiesMinus(value) {
+        var pixelCookiesPrice = document.getElementById("pixelCookiesPrice").value;
+        var pixelCookiesCount = document.getElementById("pixelCookiesCount").value;
+        document.getElementById("pixelCookiesCount").value--;
+        document.getElementById("pixelCookiesPrice").value = parseInt(pixelCookiesPrice) - 3 + ".00";
+        if (pixelCookiesCount <= 1) {
+            document.getElementById("pixelCookiesCount").value = 1;
+            document.getElementById("pixelCookiesPrice").value = 3 + ".00";
+        };
+    };
