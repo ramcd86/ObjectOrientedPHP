@@ -18,7 +18,7 @@ include ('menuitems.include.php');
 
 <form action="order.php" method="POST">
       <!-- polygonFries order area -->
-      Polygon Fries <input type="checkbox" name="polygonFries" value="Yes"></br>
+      Polygon Fries <input type="checkbox" id="Polygon Fries" name="polygonFries" value="Yes"></br>
 amount: 
 </br>
 <input type="button" onclick="polygonFriesPlus()" value="+">
