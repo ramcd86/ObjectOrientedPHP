@@ -16,20 +16,12 @@ include ('menuitems.include.php');
 
 <body>
 
+
 <form action="order.php" method="POST">
-      <!-- polygonFries order area -->
-      Polygon Fries <input type="checkbox" id="Polygon Fries" name="polygonFries" value="Yes"></br>
-amount: 
-</br>
-<input type="button" onclick="polygonFriesPlus()" value="+">
-</br>
-<input type="text" id="polygonFriesCount" name="polygonFriesCount" value="1">
-</br>
-<input type="button" onclick="polygonFriesMinus()" value="-">
-</br>
-Price: <input type="text" id="polygonFriesPrice" name="polygonFriesPrice" value="3.00" readonly>
-    </br>
-    </br>
+<input type="text" id="testCheck" value="0" readonly>
+<script></script>
+</br></br>
+
       <!-- pixelFries order area -->
       Pixel Fries <input type="checkbox" name="pixelFries" value="Yes"></br>
 amount: 
@@ -41,6 +33,19 @@ amount:
 <input type="button" onclick="pixelFriesMinus()" value="-">
 </br>
 Price: <input type="text" id="pixelFriesPrice" name="pixelFriesPrice" value="2.00" readonly>
+    </br>
+    </br>
+          <!-- polygonFries order area -->
+          Polygon Fries <label>Add to order<input type="checkbox" id="PolygonFriesID" name="polygonFries" value="Yes"></br></label>
+amount: 
+</br>
+<input type="button" onclick="polygonFriesPlus()" value="+">
+</br>
+<input type="text" id="polygonFriesCount" name="polygonFriesCount" value="1">
+</br>
+<input type="button" onclick="polygonFriesMinus()" value="-">
+</br>
+Price: <input type="text" id="polygonFriesPrice" name="polygonFriesPrice" value="3.00" readonly>
     </br>
     </br>
           <!-- terminalTacoFries order area -->

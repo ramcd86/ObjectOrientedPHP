@@ -1,3 +1,111 @@
+var pixelFriesPrice = parseInt(document.getElementById("pixelFriesPrice").value);
+var pixelFriesCount = parseInt(document.getElementById("pixelFriesCount").value);
+var polygonFriesPrice = parseInt(document.getElementById("polygonFriesPrice").value);
+var polygonFriesCount = parseInt(document.getElementById("polygonFriesCount").value);
+var terminalTacoFriesPrice = parseInt(document.getElementById("terminalTacoFriesPrice").value);
+var terminalTacoFriesCount = parseInt(document.getElementById("terminalTacoFriesCount").value);
+var cDOSCheeseFriesPrice = parseInt(document.getElementById("cDOSCheeseFriesPrice").value);
+var cDOSCheeseFriesCount = parseInt(document.getElementById("cDOSCheeseFriesCount").value);
+var pixelBurgPrice = parseInt(document.getElementById("pixelBurgPrice").value);
+var pixelBurgCount = parseInt(document.getElementById("pixelBurgCount").value);
+var extraLifePixelBurgPrice = parseInt(document.getElementById("extraLifePixelBurgPrice").value);
+var extraLifePixelBurgCount = parseInt(document.getElementById("extraLifePixelBurgCount").value);
+var theBigBytePrice = parseInt(document.getElementById("theBigBytePrice").value);
+var theBigByteCount = parseInt(document.getElementById("theBigByteCount").value);
+var theTexasDownloadPrice = parseInt(document.getElementById("theTexasDownloadPrice").value);
+var theTexasDownloadCount = parseInt(document.getElementById("theTexasDownloadCount").value);
+var cDOSCheesePizzaPrice = parseInt(document.getElementById("cDOSCheesePizzaPrice").value);
+var cDOSCheesePizzaCount = parseInt(document.getElementById("cDOSCheesePizzaCount").value);
+var pepperoniParserPizzaPrice = parseInt(document.getElementById("pepperoniParserPizzaPrice").value);
+var pepperoniParserPizzaCount = parseInt(document.getElementById("pepperoniParserPizzaCount").value);
+var hawaiiZonePizzaPrice = parseInt(document.getElementById("hawaiiZonePizzaPrice").value);
+var hawaiiZonePizzaCount = parseInt(document.getElementById("hawaiiZonePizzaCount").value);
+var vegetablePizzaPrice = parseInt(document.getElementById("vegetablePizzaPrice").value);
+var vegetablePizzaCount = parseInt(document.getElementById("vegetablePizzaCount").value);
+var pixelColaPrice = parseInt(document.getElementById("pixelColaPrice").value);
+var pixelColaCount = parseInt(document.getElementById("pixelColaCount").value);
+var pixelOrangePrice = parseInt(document.getElementById("pixelOrangePrice").value);
+var pixelOrangeCount = parseInt(document.getElementById("pixelOrangeCount").value);
+var pixelIceCreamPrice = parseInt(document.getElementById("pixelIceCreamPrice").value);
+var pixelIceCreamCount = parseInt(document.getElementById("pixelIceCreamCount").value);
+var pixelCookiesPrice = parseInt(document.getElementById("pixelCookiesPrice").value);
+var pixelCookiesCount = parseInt(document.getElementById("pixelCookiesCount").value);
+var testCheck = document.getElementById("testCheck");
+
+
+
+function pixelFriesPlus(value) {
+    pixelFriesPrice = document.getElementById("pixelFriesPrice").value;
+    document.getElementById("pixelFriesCount").value++;
+    document.getElementById("pixelFriesPrice").value = parseInt(pixelFriesPrice) + 2 + ".00";
+    testCheck.value = testCheck.value + parseInt(pixelFriesCount);
+};
+
+function pixelFriesMinus(value) {
+    pixelFriesPrice = document.getElementById("pixelFriesPrice").value;
+    pixelFriesCount = document.getElementById("pixelFriesCount").value;
+    document.getElementById("pixelFriesCount").value--;
+    document.getElementById("pixelFriesPrice").value = parseInt(pixelFriesPrice) - 2 + ".00";
+    if (pixelFriesCount <= 1) {
+        document.getElementById("pixelFriesCount").value = 1;
+        document.getElementById("pixelFriesPrice").value = 2 + ".00";
+    };
+    testCheck.value = testCheck.value + parseInt(pixelFriesCount);
+};
+
+testCheck.value = pixelFriesCount;
+
+function polygonFriesPlus(value) {
+    var polygonFriesPrice = document.getElementById("polygonFriesPrice").value;
+    document.getElementById("polygonFriesCount").value++;
+    document.getElementById("polygonFriesPrice").value = parseInt(polygonFriesPrice) + 3 + ".00";
+};
+
+function polygonFriesMinus(value) {
+    var polygonFriesPrice = document.getElementById("polygonFriesPrice").value;
+    var polygonFriesCount = document.getElementById("polygonFriesCount").value;
+    document.getElementById("polygonFriesCount").value--;
+    document.getElementById("polygonFriesPrice").value = parseInt(polygonFriesPrice) - 3 + ".00";
+    if (polygonFriesCount <= 1) {
+        document.getElementById("polygonFriesCount").value = 1;
+        document.getElementById("polygonFriesPrice").value = 3 + ".00";
+    };
+};
+
+function terminalTacoFriesPlus(value) {
+    var terminalTacoFriesPrice = document.getElementById("terminalTacoFriesPrice").value;
+    document.getElementById("terminalTacoFriesCount").value++;
+    document.getElementById("terminalTacoFriesPrice").value = parseInt(terminalTacoFriesPrice) + 4 + ".00";
+};
+
+function terminalTacoFriesMinus(value) {
+    var terminalTacoFriesPrice = document.getElementById("terminalTacoFriesPrice").value;
+    var terminalTacoFriesCount = document.getElementById("terminalTacoFriesCount").value;
+    document.getElementById("terminalTacoFriesCount").value--;
+    document.getElementById("terminalTacoFriesPrice").value = parseInt(terminalTacoFriesPrice) - 4 + ".00";
+    if (terminalTacoFriesCount <= 1) {
+        document.getElementById("terminalTacoFriesCount").value = 1;
+        document.getElementById("terminalTacoFriesPrice").value = 4 + ".00";
+    };
+};
+
+function cDOSCheeseFriesPlus(value) {
+    var cDOSCheeseFriesPrice = document.getElementById("cDOSCheeseFriesPrice").value;
+    document.getElementById("cDOSCheeseFriesCount").value++;
+    document.getElementById("cDOSCheeseFriesPrice").value = parseInt(cDOSCheeseFriesPrice) + 4 + ".00";
+};
+
+function cDOSCheeseFriesMinus(value) {
+    var cDOSCheeseFriesPrice = document.getElementById("cDOSCheeseFriesPrice").value;
+    var cDOSCheeseFriesCount = document.getElementById("cDOSCheeseFriesCount").value;
+    document.getElementById("cDOSCheeseFriesCount").value--;
+    document.getElementById("cDOSCheeseFriesPrice").value = parseInt(cDOSCheeseFriesPrice) - 4 + ".00";
+    if (cDOSCheeseFriesCount <= 1) {
+        document.getElementById("cDOSCheeseFriesCount").value = 1;
+        document.getElementById("cDOSCheeseFriesPrice").value = 4 + ".00";
+    };
+};
+
 // Pixel Burger Count Evaulator
 function pixelBurgPlus(value) {
     var pixelBurgPrice = document.getElementById("pixelBurgPrice").value;
@@ -136,74 +244,6 @@ function vegetablePizzaMinus(value) {
     if (vegetablePizzaCount <= 1) {
         document.getElementById("vegetablePizzaCount").value = 1;
         document.getElementById("vegetablePizzaPrice").value = 11 + ".00";
-    };
-};
-
-function pixelFriesPlus(value) {
-    var pixelFriesPrice = document.getElementById("pixelFriesPrice").value;
-    document.getElementById("pixelFriesCount").value++;
-    document.getElementById("pixelFriesPrice").value = parseInt(pixelFriesPrice) + 2 + ".00";
-};
-
-function pixelFriesMinus(value) {
-    var pixelFriesPrice = document.getElementById("pixelFriesPrice").value;
-    var pixelFriesCount = document.getElementById("pixelFriesCount").value;
-    document.getElementById("pixelFriesCount").value--;
-    document.getElementById("pixelFriesPrice").value = parseInt(pixelFriesPrice) - 2 + ".00";
-    if (pixelFriesCount <= 1) {
-        document.getElementById("pixelFriesCount").value = 1;
-        document.getElementById("pixelFriesPrice").value = 2 + ".00";
-    };
-};
-
-function polygonFriesPlus(value) {
-    var polygonFriesPrice = document.getElementById("polygonFriesPrice").value;
-    document.getElementById("polygonFriesCount").value++;
-    document.getElementById("polygonFriesPrice").value = parseInt(polygonFriesPrice) + 3 + ".00";
-};
-
-function polygonFriesMinus(value) {
-    var polygonFriesPrice = document.getElementById("polygonFriesPrice").value;
-    var polygonFriesCount = document.getElementById("polygonFriesCount").value;
-    document.getElementById("polygonFriesCount").value--;
-    document.getElementById("polygonFriesPrice").value = parseInt(polygonFriesPrice) - 3 + ".00";
-    if (polygonFriesCount <= 1) {
-        document.getElementById("polygonFriesCount").value = 1;
-        document.getElementById("polygonFriesPrice").value = 3 + ".00";
-    };
-};
-
-function terminalTacoFriesPlus(value) {
-    var terminalTacoFriesPrice = document.getElementById("terminalTacoFriesPrice").value;
-    document.getElementById("terminalTacoFriesCount").value++;
-    document.getElementById("terminalTacoFriesPrice").value = parseInt(terminalTacoFriesPrice) + 4 + ".00";
-};
-
-function terminalTacoFriesMinus(value) {
-    var terminalTacoFriesPrice = document.getElementById("terminalTacoFriesPrice").value;
-    var terminalTacoFriesCount = document.getElementById("terminalTacoFriesCount").value;
-    document.getElementById("terminalTacoFriesCount").value--;
-    document.getElementById("terminalTacoFriesPrice").value = parseInt(terminalTacoFriesPrice) - 4 + ".00";
-    if (terminalTacoFriesCount <= 1) {
-        document.getElementById("terminalTacoFriesCount").value = 1;
-        document.getElementById("terminalTacoFriesPrice").value = 4 + ".00";
-    };
-};
-
-function cDOSCheeseFriesPlus(value) {
-    var cDOSCheeseFriesPrice = document.getElementById("cDOSCheeseFriesPrice").value;
-    document.getElementById("cDOSCheeseFriesCount").value++;
-    document.getElementById("cDOSCheeseFriesPrice").value = parseInt(cDOSCheeseFriesPrice) + 4 + ".00";
-};
-
-function cDOSCheeseFriesMinus(value) {
-    var cDOSCheeseFriesPrice = document.getElementById("cDOSCheeseFriesPrice").value;
-    var cDOSCheeseFriesCount = document.getElementById("cDOSCheeseFriesCount").value;
-    document.getElementById("cDOSCheeseFriesCount").value--;
-    document.getElementById("cDOSCheeseFriesPrice").value = parseInt(cDOSCheeseFriesPrice) - 4 + ".00";
-    if (cDOSCheeseFriesCount <= 1) {
-        document.getElementById("cDOSCheeseFriesCount").value = 1;
-        document.getElementById("cDOSCheeseFriesPrice").value = 4 + ".00";
     };
 };
 
