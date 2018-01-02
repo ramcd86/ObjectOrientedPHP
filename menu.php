@@ -18,12 +18,12 @@ include ('menuitems.include.php');
 
 
 <form action="order.php" method="POST">
-<input type="text" id="testCheck" value="0" readonly>
-<script></script>
+<input type="text" id="testCheck" value="Zero">
 </br></br>
 
       <!-- pixelFries order area -->
-      Pixel Fries <input type="checkbox" name="pixelFries" value="Yes"></br>
+      Pixel Fries <input type="checkbox" name="pixelFries" id="pixelFriesCheckbox" value="Yes" onclick="pixelFriesSetter()">
+      </br>
 amount: 
 </br>
 <input type="button" onclick="pixelFriesPlus()" value="+">

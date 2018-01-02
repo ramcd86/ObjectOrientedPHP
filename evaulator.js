@@ -33,12 +33,19 @@ var pixelCookiesCount = parseInt(document.getElementById("pixelCookiesCount").va
 var testCheck = document.getElementById("testCheck");
 
 
+function pixelFriesSetter() {
+    if (document.getElementById("pixelFriesCheckbox").checked == true) {
+        document.getElementById("testCheck").value = "Checked";
+    } else if (document.getElementById("pixelFriesCheckbox").checked == false) {
+        document.getElementById("testCheck").value = "Unchecked";
+    }
+}
+
 
 function pixelFriesPlus(value) {
     pixelFriesPrice = document.getElementById("pixelFriesPrice").value;
     document.getElementById("pixelFriesCount").value++;
     document.getElementById("pixelFriesPrice").value = parseInt(pixelFriesPrice) + 2 + ".00";
-    testCheck.value = testCheck.value + parseInt(pixelFriesCount);
 };
 
 function pixelFriesMinus(value) {
@@ -50,10 +57,7 @@ function pixelFriesMinus(value) {
         document.getElementById("pixelFriesCount").value = 1;
         document.getElementById("pixelFriesPrice").value = 2 + ".00";
     };
-    testCheck.value = testCheck.value + parseInt(pixelFriesCount);
 };
-
-testCheck.value = pixelFriesCount;
 
 function polygonFriesPlus(value) {
     var polygonFriesPrice = document.getElementById("polygonFriesPrice").value;
