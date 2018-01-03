@@ -18,11 +18,15 @@ include ('menuitems.include.php');
 
 
 <form action="order.php" method="POST">
-<input type="text" id="finalTotal" value="0">
-<input type="text" id="itemCount" value="0">
+<div class="total">
+Total: <input type="text" id="finalTotal" value="0"></br>
+Number: <input type="text" id="itemCount" value="0"></br>
+<input type="submit">
+</div>
 </br></br>
 
       <!-- pixelFries order area -->
+      <div id="pixelFriesDiv" class="unselected">
       Pixel Fries <input type="checkbox" name="pixelFries" id="pixelFriesCheckbox" value="Yes">
       </br>
 amount: 
@@ -36,6 +40,7 @@ amount:
 Price: <input type="text" id="pixelFriesPrice" name="pixelFriesPrice" value="2.00" readonly>
     </br>
     </br>
+    </div>
           <!-- polygonFries order area -->
           Polygon Fries <label>Add to order<input type="checkbox" id="polygonFriesCheckbox" name="polygonFries" value="Yes"></br></label>
 amount: 
