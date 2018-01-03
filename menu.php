@@ -18,7 +18,8 @@ include ('menuitems.include.php');
 
 
 <form action="order.php" method="POST">
-<input type="text" id="finalTotal" value="Zero">
+<input type="text" id="finalTotal" value="0">
+<input type="text" id="itemCount" value="0">
 </br></br>
 
       <!-- pixelFries order area -->
