@@ -200,7 +200,7 @@ document.onclick = function() {
     if (itemCount > 3) {
         totalComp.value = (finalTotal / 100 * 90).toFixed(2);
     } else {
-        totalComp.value = totalComp.value = finalTotal;
+        totalComp.value = (finalTotal).toFixed(2);
     }
 
     totalItem.value = itemCount;
@@ -210,68 +210,68 @@ document.onclick = function() {
 function pixelFriesPlus(value) {
     pixelFriesPrice = document.getElementById("pixelFriesPrice").value;
     document.getElementById("pixelFriesCount").value++;
-    document.getElementById("pixelFriesPrice").value = parseInt(pixelFriesPrice) + 2 + ".00";
+    document.getElementById("pixelFriesPrice").value = (parseInt(pixelFriesPrice) + parseInt(2)).toFixed(2);
 };
 
 function pixelFriesMinus(value) {
     pixelFriesPrice = document.getElementById("pixelFriesPrice").value;
     pixelFriesCount = document.getElementById("pixelFriesCount").value;
     document.getElementById("pixelFriesCount").value--;
-    document.getElementById("pixelFriesPrice").value = parseInt(pixelFriesPrice) - 2 + ".00";
+    document.getElementById("pixelFriesPrice").value = (parseInt(pixelFriesPrice) - parseInt(2)).toFixed(2);
     if (pixelFriesCount <= 1) {
         document.getElementById("pixelFriesCount").value = 1;
-        document.getElementById("pixelFriesPrice").value = 2 + ".00";
+        document.getElementById("pixelFriesPrice").value = (2).toFixed(2);
     };
 };
 
 function polygonFriesPlus(value) {
     polygonFriesPrice = document.getElementById("polygonFriesPrice").value;
     document.getElementById("polygonFriesCount").value++;
-    document.getElementById("polygonFriesPrice").value = parseInt(polygonFriesPrice) + 3 + ".00";
+    document.getElementById("polygonFriesPrice").value = (parseInt(polygonFriesPrice) + parseInt(3)).toFixed(2);
 };
 
 function polygonFriesMinus(value) {
     polygonFriesPrice = document.getElementById("polygonFriesPrice").value;
     polygonFriesCount = document.getElementById("polygonFriesCount").value;
     document.getElementById("polygonFriesCount").value--;
-    document.getElementById("polygonFriesPrice").value = parseInt(polygonFriesPrice) - 3 + ".00";
+    document.getElementById("polygonFriesPrice").value = (parseInt(polygonFriesPrice) - parseInt(3)).toFixed(2);
     if (polygonFriesCount <= 1) {
         document.getElementById("polygonFriesCount").value = 1;
-        document.getElementById("polygonFriesPrice").value = 3 + ".00";
+        document.getElementById("polygonFriesPrice").value = (3).toFixed(3);
     };
 };
 
 function terminalTacoFriesPlus(value) {
     terminalTacoFriesPrice = document.getElementById("terminalTacoFriesPrice").value;
     document.getElementById("terminalTacoFriesCount").value++;
-    document.getElementById("terminalTacoFriesPrice").value = parseInt(terminalTacoFriesPrice) + 4 + ".00";
+    document.getElementById("terminalTacoFriesPrice").value = (parseInt(terminalTacoFriesPrice) + parseInt(4)).toFixed(2);
 };
 
 function terminalTacoFriesMinus(value) {
     terminalTacoFriesPrice = document.getElementById("terminalTacoFriesPrice").value;
     terminalTacoFriesCount = document.getElementById("terminalTacoFriesCount").value;
     document.getElementById("terminalTacoFriesCount").value--;
-    document.getElementById("terminalTacoFriesPrice").value = parseInt(terminalTacoFriesPrice) - 4 + ".00";
+    document.getElementById("terminalTacoFriesPrice").value = (parseInt(terminalTacoFriesPrice) - parseInt(4)).toFixed(2);
     if (terminalTacoFriesCount <= 1) {
         document.getElementById("terminalTacoFriesCount").value = 1;
-        document.getElementById("terminalTacoFriesPrice").value = 4 + ".00";
+        document.getElementById("terminalTacoFriesPrice").value = (4).toFixed(2);
     };
 };
 
 function cDOSCheeseFriesPlus(value) {
     cDOSCheeseFriesPrice = document.getElementById("cDOSCheeseFriesPrice").value;
     document.getElementById("cDOSCheeseFriesCount").value++;
-    document.getElementById("cDOSCheeseFriesPrice").value = parseInt(cDOSCheeseFriesPrice) + 4 + ".00";
+    document.getElementById("cDOSCheeseFriesPrice").value = (parseInt(cDOSCheeseFriesPrice) + parseInt(4)).toFixed(2);
 };
 
 function cDOSCheeseFriesMinus(value) {
     cDOSCheeseFriesPrice = document.getElementById("cDOSCheeseFriesPrice").value;
     cDOSCheeseFriesCount = document.getElementById("cDOSCheeseFriesCount").value;
     document.getElementById("cDOSCheeseFriesCount").value--;
-    document.getElementById("cDOSCheeseFriesPrice").value = parseInt(cDOSCheeseFriesPrice) - 4 + ".00";
+    document.getElementById("cDOSCheeseFriesPrice").value = (parseInt(cDOSCheeseFriesPrice) - parseInt(4)).toFixed(2);
     if (cDOSCheeseFriesCount <= 1) {
         document.getElementById("cDOSCheeseFriesCount").value = 1;
-        document.getElementById("cDOSCheeseFriesPrice").value = 4 + ".00";
+        document.getElementById("cDOSCheeseFriesPrice").value = (4).toFixed(2);
     };
 };
 
@@ -279,17 +279,17 @@ function cDOSCheeseFriesMinus(value) {
 function pixelBurgPlus(value) {
     pixelBurgPrice = document.getElementById("pixelBurgPrice").value;
     document.getElementById("pixelBurgCount").value++;
-    document.getElementById("pixelBurgPrice").value = parseInt(pixelBurgPrice) + 3 + ".00";
+    document.getElementById("pixelBurgPrice").value = (parseInt(pixelBurgPrice) + parseInt(3)).toFixed(2);
 };
 
 function pixelBurgMinus(value) {
     pixelBurgPrice = document.getElementById("pixelBurgPrice").value;
     pixelBurgCount = document.getElementById("pixelBurgCount").value;
     document.getElementById("pixelBurgCount").value--;
-    document.getElementById("pixelBurgPrice").value = parseInt(pixelBurgPrice) - 3 + ".00";
+    document.getElementById("pixelBurgPrice").value = (parseInt(pixelBurgPrice) - parseInt(3)).toFixed(2);
     if (pixelBurgCount <= 1) {
         document.getElementById("pixelBurgCount").value = 1;
-        document.getElementById("pixelBurgPrice").value = 3 + ".00";
+        document.getElementById("pixelBurgPrice").value = (3).toFixed(2);
     };
 };
 
@@ -298,17 +298,17 @@ function pixelBurgMinus(value) {
 function extraLifePixelBurgPlus(value) {
     extraLifePixelBurgPrice = document.getElementById("extraLifePixelBurgPrice").value;
     document.getElementById("extraLifePixelBurgCount").value++;
-    document.getElementById("extraLifePixelBurgPrice").value = parseInt(extraLifePixelBurgPrice) + 4 + ".00";
+    document.getElementById("extraLifePixelBurgPrice").value = (parseInt(extraLifePixelBurgPrice) + parseInt(4)).toFixed(2);
 };
 
 function extraLifePixelBurgMinus(value) {
     extraLifePixelBurgPrice = document.getElementById("extraLifePixelBurgPrice").value;
     extraLifePixelBurgCount = document.getElementById("extraLifePixelBurgCount").value;
     document.getElementById("extraLifePixelBurgCount").value--;
-    document.getElementById("extraLifePixelBurgPrice").value = parseInt(extraLifePixelBurgPrice) - 4 + ".00";
+    document.getElementById("extraLifePixelBurgPrice").value = (parseInt(extraLifePixelBurgPrice) - parseInt(4)).toFixed(2);
     if (extraLifePixelBurgCount <= 1) {
         document.getElementById("extraLifePixelBurgCount").value = 1;
-        document.getElementById("extraLifePixelBurgPrice").value = 4 + ".00";
+        document.getElementById("extraLifePixelBurgPrice").value = (4).toFixed(2);
     };
 };
 
@@ -316,17 +316,17 @@ function extraLifePixelBurgMinus(value) {
 function theBigBytePlus(value) {
     theBigBytePrice = document.getElementById("theBigBytePrice").value;
     document.getElementById("theBigByteCount").value++;
-    document.getElementById("theBigBytePrice").value = parseInt(theBigBytePrice) + 5 + ".00";
+    document.getElementById("theBigBytePrice").value = (parseInt(theBigBytePrice) + parseInt(5)).toFixed(2);
 };
 
 function theBigByteMinus(value) {
     theBigBytePrice = document.getElementById("theBigBytePrice").value;
     theBigByteCount = document.getElementById("theBigByteCount").value;
     document.getElementById("theBigByteCount").value--;
-    document.getElementById("theBigBytePrice").value = parseInt(theBigBytePrice) - 5 + ".00";
+    document.getElementById("theBigBytePrice").value = (parseInt(theBigBytePrice) - parseInt(5)).toFixed(2);
     if (theBigByteCount <= 1) {
         document.getElementById("theBigByteCount").value = 1;
-        document.getElementById("theBigBytePrice").value = 4 + ".00";
+        document.getElementById("theBigBytePrice").value = (5).toFixed(2);
     };
 };
 
@@ -334,152 +334,152 @@ function theBigByteMinus(value) {
 function theTexasDownloadPlus(value) {
     theTexasDownloadPrice = document.getElementById("theTexasDownloadPrice").value;
     document.getElementById("theTexasDownloadCount").value++;
-    document.getElementById("theTexasDownloadPrice").value = parseInt(theTexasDownloadPrice) + 4 + ".00";
+    document.getElementById("theTexasDownloadPrice").value = (parseInt(theTexasDownloadPrice) + parseInt(4)).toFixed(2);
 };
 
 function theTexasDownloadMinus(value) {
     theTexasDownloadPrice = document.getElementById("theTexasDownloadPrice").value;
     theTexasDownloadCount = document.getElementById("theTexasDownloadCount").value;
     document.getElementById("theTexasDownloadCount").value--;
-    document.getElementById("theTexasDownloadPrice").value = parseInt(theTexasDownloadPrice) - 4 + ".00";
+    document.getElementById("theTexasDownloadPrice").value = (parseInt(theTexasDownloadPrice) - parseInt(4)).toFixed(2);
     if (theTexasDownloadCount <= 1) {
         document.getElementById("theTexasDownloadCount").value = 1;
-        document.getElementById("theTexasDownloadPrice").value = 4 + ".00";
+        document.getElementById("theTexasDownloadPrice").value = (4).toFixed(2);
     };
 };
 
 function cDOSCheesePizzaPlus(value) {
     cDOSCheesePizzaPrice = document.getElementById("cDOSCheesePizzaPrice").value;
     document.getElementById("cDOSCheesePizzaCount").value++;
-    document.getElementById("cDOSCheesePizzaPrice").value = parseInt(cDOSCheesePizzaPrice) + 8 + ".00";
+    document.getElementById("cDOSCheesePizzaPrice").value = (parseInt(cDOSCheesePizzaPrice) + parseInt(8)).toFixed(2);
 };
 
 function cDOSCheesePizzaMinus(value) {
     cDOSCheesePizzaPrice = document.getElementById("cDOSCheesePizzaPrice").value;
     cDOSCheesePizzaCount = document.getElementById("cDOSCheesePizzaCount").value;
     document.getElementById("cDOSCheesePizzaCount").value--;
-    document.getElementById("cDOSCheesePizzaPrice").value = parseInt(cDOSCheesePizzaPrice) - 8 + ".00";
+    document.getElementById("cDOSCheesePizzaPrice").value = (parseInt(cDOSCheesePizzaPrice) - parseInt(8)).toFixed(2);
     if (cDOSCheesePizzaCount <= 1) {
         document.getElementById("cDOSCheesePizzaCount").value = 1;
-        document.getElementById("cDOSCheesePizzaPrice").value = 8 + ".00";
+        document.getElementById("cDOSCheesePizzaPrice").value = (8).toFixed(2);
     };
 };
 
 function pepperoniParserPizzaPlus(value) {
     pepperoniParserPizzaPrice = document.getElementById("pepperoniParserPizzaPrice").value;
     document.getElementById("pepperoniParserPizzaCount").value++;
-    document.getElementById("pepperoniParserPizzaPrice").value = parseInt(pepperoniParserPizzaPrice) + 10 + ".00";
+    document.getElementById("pepperoniParserPizzaPrice").value = (parseInt(pepperoniParserPizzaPrice) + parseInt(10)).toFixed(2);
 };
 
 function pepperoniParserPizzaMinus(value) {
     pepperoniParserPizzaPrice = document.getElementById("pepperoniParserPizzaPrice").value;
     pepperoniParserPizzaCount = document.getElementById("pepperoniParserPizzaCount").value;
     document.getElementById("pepperoniParserPizzaCount").value--;
-    document.getElementById("pepperoniParserPizzaPrice").value = parseInt(pepperoniParserPizzaPrice) - 10 + ".00";
+    document.getElementById("pepperoniParserPizzaPrice").value = (parseInt(pepperoniParserPizzaPrice) - parseInt(10)).toFixed(2);
     if (pepperoniParserPizzaCount <= 1) {
         document.getElementById("pepperoniParserPizzaCount").value = 1;
-        document.getElementById("pepperoniParserPizzaPrice").value = 10 + ".00";
+        document.getElementById("pepperoniParserPizzaPrice").value = (10).toFixed(2);
     };
 };
 
 function hawaiiZonePizzaPlus(value) {
     hawaiiZonePizzaPrice = document.getElementById("hawaiiZonePizzaPrice").value;
     document.getElementById("hawaiiZonePizzaCount").value++;
-    document.getElementById("hawaiiZonePizzaPrice").value = parseInt(hawaiiZonePizzaPrice) + 11 + ".00";
+    document.getElementById("hawaiiZonePizzaPrice").value = (parseInt(hawaiiZonePizzaPrice) + parseInt(11)).toFixed(2);
 };
 
 function hawaiiZonePizzaMinus(value) {
     hawaiiZonePizzaPrice = document.getElementById("hawaiiZonePizzaPrice").value;
     hawaiiZonePizzaCount = document.getElementById("hawaiiZonePizzaCount").value;
     document.getElementById("hawaiiZonePizzaCount").value--;
-    document.getElementById("hawaiiZonePizzaPrice").value = parseInt(hawaiiZonePizzaPrice) - 11 + ".00";
+    document.getElementById("hawaiiZonePizzaPrice").value = (parseInt(hawaiiZonePizzaPrice) - parseInt(11)).toFixed(2);
     if (hawaiiZonePizzaCount <= 1) {
         document.getElementById("hawaiiZonePizzaCount").value = 1;
-        document.getElementById("hawaiiZonePizzaPrice").value = 11 + ".00";
+        document.getElementById("hawaiiZonePizzaPrice").value = (11).toFixed(2);
     };
 };
 
 function vegetablePizzaPlus(value) {
     vegetablePizzaPrice = document.getElementById("vegetablePizzaPrice").value;
     document.getElementById("vegetablePizzaCount").value++;
-    document.getElementById("vegetablePizzaPrice").value = parseInt(vegetablePizzaPrice) + 11 + ".00";
+    document.getElementById("vegetablePizzaPrice").value = (parseInt(vegetablePizzaPrice) + parseInt(11)).toFixed(2);
 };
 
 function vegetablePizzaMinus(value) {
     vegetablePizzaPrice = document.getElementById("vegetablePizzaPrice").value;
     vegetablePizzaCount = document.getElementById("vegetablePizzaCount").value;
     document.getElementById("vegetablePizzaCount").value--;
-    document.getElementById("vegetablePizzaPrice").value = parseInt(vegetablePizzaPrice) - 11 + ".00";
+    document.getElementById("vegetablePizzaPrice").value = (parseInt(vegetablePizzaPrice) - parseInt(11)).toFixed(2);
     if (vegetablePizzaCount <= 1) {
         document.getElementById("vegetablePizzaCount").value = 1;
-        document.getElementById("vegetablePizzaPrice").value = 11 + ".00";
+        document.getElementById("vegetablePizzaPrice").value = (11).toFixed(2);
     };
 };
 
 function pixelColaPlus(value) {
     pixelColaPrice = document.getElementById("pixelColaPrice").value;
     document.getElementById("pixelColaCount").value++;
-    document.getElementById("pixelColaPrice").value = parseInt(pixelColaPrice) + 1 + ".00";
+    document.getElementById("pixelColaPrice").value = (parseInt(pixelColaPrice) + parseInt(1)).toFixed(2);
 };
 
 function pixelColaMinus(value) {
     pixelColaPrice = document.getElementById("pixelColaPrice").value;
     pixelColaCount = document.getElementById("pixelColaCount").value;
     document.getElementById("pixelColaCount").value--;
-    document.getElementById("pixelColaPrice").value = parseInt(pixelColaPrice) - 1 + ".00";
+    document.getElementById("pixelColaPrice").value = (parseInt(pixelColaPrice) - parseInt(1)).toFixed(2);
     if (pixelColaCount <= 1) {
         document.getElementById("pixelColaCount").value = 1;
-        document.getElementById("pixelColaPrice").value = 1 + ".00";
+        document.getElementById("pixelColaPrice").value = (1).toFixed(2);
     };
 };
 
 function pixelOrangePlus(value) {
     pixelOrangePrice = document.getElementById("pixelOrangePrice").value;
     document.getElementById("pixelOrangeCount").value++;
-    document.getElementById("pixelOrangePrice").value = parseInt(pixelOrangePrice) + 1 + ".00";
+    document.getElementById("pixelOrangePrice").value = (parseInt(pixelOrangePrice) + parseInt(1)).toFixed(2);
 };
 
 function pixelOrangeMinus(value) {
     pixelOrangePrice = document.getElementById("pixelOrangePrice").value;
     pixelOrangeCount = document.getElementById("pixelOrangeCount").value;
     document.getElementById("pixelOrangeCount").value--;
-    document.getElementById("pixelOrangePrice").value = parseInt(pixelOrangePrice) - 1 + ".00";
+    document.getElementById("pixelOrangePrice").value = (parseInt(pixelOrangePrice) - parseInt(1)).toFixed(2);
     if (pixelOrangeCount <= 1) {
         document.getElementById("pixelOrangeCount").value = 1;
-        document.getElementById("pixelOrangePrice").value = 1 + ".00";
+        document.getElementById("pixelOrangePrice").value = (1).toFixed(2);
     };
 };
 
 function pixelIceCreamPlus(value) {
     pixelIceCreamPrice = document.getElementById("pixelIceCreamPrice").value;
     document.getElementById("pixelIceCreamCount").value++;
-    document.getElementById("pixelIceCreamPrice").value = parseInt(pixelIceCreamPrice) + 3 + ".00";
+    document.getElementById("pixelIceCreamPrice").value = (parseInt(pixelIceCreamPrice) + parseInt(3)).toFixed(2);
 };
 
 function pixelIceCreamMinus(value) {
     pixelIceCreamPrice = document.getElementById("pixelIceCreamPrice").value;
     pixelIceCreamCount = document.getElementById("pixelIceCreamCount").value;
     document.getElementById("pixelIceCreamCount").value--;
-    document.getElementById("pixelIceCreamPrice").value = parseInt(pixelIceCreamPrice) - 3 + ".00";
+    document.getElementById("pixelIceCreamPrice").value = (parseInt(pixelIceCreamPrice) - parseInt(3)).toFixed(2);
     if (pixelIceCreamCount <= 1) {
         document.getElementById("pixelIceCreamCount").value = 1;
-        document.getElementById("pixelIceCreamPrice").value = 3 + ".00";
+        document.getElementById("pixelIceCreamPrice").value = (3).toFixed(2);
     };
 };
 
 function pixelCookiesPlus(value) {
     pixelCookiesPrice = document.getElementById("pixelCookiesPrice").value;
     document.getElementById("pixelCookiesCount").value++;
-    document.getElementById("pixelCookiesPrice").value = parseInt(pixelCookiesPrice) + 3 + ".00";
+    document.getElementById("pixelCookiesPrice").value = (parseInt(pixelCookiesPrice) + parseInt(3)).toFixed(2);
 };
 
 function pixelCookiesMinus(value) {
     pixelCookiesPrice = document.getElementById("pixelCookiesPrice").value;
     pixelCookiesCount = document.getElementById("pixelCookiesCount").value;
     document.getElementById("pixelCookiesCount").value--;
-    document.getElementById("pixelCookiesPrice").value = parseInt(pixelCookiesPrice) - 3 + ".00";
+    document.getElementById("pixelCookiesPrice").value = (parseInt(pixelCookiesPrice) - parseInt(3)).toFixed(2);
     if (pixelCookiesCount <= 1) {
         document.getElementById("pixelCookiesCount").value = 1;
-        document.getElementById("pixelCookiesPrice").value = 3 + ".00";
+        document.getElementById("pixelCookiesPrice").value = (3).toFixed(2);
     };
 };

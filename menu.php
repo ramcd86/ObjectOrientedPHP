@@ -19,7 +19,7 @@ include ('menuitems.include.php');
 
 <form action="order.php" method="POST">
 <div class="total">
-Total: <input type="text" id="finalTotal" value="0"></br>
+Total: <input type="text" id="finalTotal" value="0.00"></br>
 Number: <input type="text" id="itemCount" value="0"></br>
 <input type="submit">
 </div>
