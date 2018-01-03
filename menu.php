@@ -18,11 +18,11 @@ include ('menuitems.include.php');
 
 
 <form action="order.php" method="POST">
-<input type="text" id="testCheck" value="Zero">
+<input type="text" id="finalTotal" value="Zero">
 </br></br>
 
       <!-- pixelFries order area -->
-      Pixel Fries <input type="checkbox" name="pixelFries" id="pixelFriesCheckbox" value="Yes" onclick="pixelFriesSetter()">
+      Pixel Fries <input type="checkbox" name="pixelFries" id="pixelFriesCheckbox" value="Yes">
       </br>
 amount: 
 </br>
@@ -36,7 +36,7 @@ Price: <input type="text" id="pixelFriesPrice" name="pixelFriesPrice" value="2.0
     </br>
     </br>
           <!-- polygonFries order area -->
-          Polygon Fries <label>Add to order<input type="checkbox" id="PolygonFriesID" name="polygonFries" value="Yes"></br></label>
+          Polygon Fries <label>Add to order<input type="checkbox" id="polygonFriesCheckbox" name="polygonFries" value="Yes"></br></label>
 amount: 
 </br>
 <input type="button" onclick="polygonFriesPlus()" value="+">
@@ -49,7 +49,7 @@ Price: <input type="text" id="polygonFriesPrice" name="polygonFriesPrice" value=
     </br>
     </br>
           <!-- terminalTacoFries order area -->
-Terminal Taco Fries <input type="checkbox" name="terminalTacoFries" value="Yes"></br>
+Terminal Taco Fries <input type="checkbox" name="terminalTacoFries" value="Yes" id="terminalTacoFriesCheckbox"></br>
 amount: 
 </br>
 <input type="button" onclick="terminalTacoFriesPlus()" value="+">
@@ -62,7 +62,7 @@ Price: <input type="text" id="terminalTacoFriesPrice" name="terminalTacoFriesPri
     </br>
     </br>
           <!-- cDOSCheeseFries order area -->
-C DOS Cheese Fries <input type="checkbox" name="cDOSCheeseFries" value="Yes"></br>
+C DOS Cheese Fries <input type="checkbox" name="cDOSCheeseFries" value="Yes" id="cDOSCheeseFriesCheckbox"></br>
 amount: 
 </br>
 <input type="button" onclick="cDOSCheeseFriesPlus()" value="+">
@@ -77,7 +77,7 @@ Price: <input type="text" id="cDOSCheeseFriesPrice" name="cDOSCheeseFriesPrice" 
 <!--
 Pixel Burger Order Area
 -->
-Pixel Burger  <input type="checkbox" name="pixelBurger" value="Yes"></br>
+Pixel Burger  <input type="checkbox" name="pixelBurger" value="Yes" id="pixelBurgCheckbox"></br>
 Amount: 
 </br>
 <input type="button" onclick="pixelBurgPlus()" value="+">
@@ -91,7 +91,7 @@ Price: <input type="text" id="pixelBurgPrice" name="pixelBurgPrice" value="3.00"
 <!--
 Extra Life Pixel Burger Order Area
 -->
-Extra Life Pixel Burger <input type="checkbox" name="extraLifePixelBurger" value="Yes"></br>
+Extra Life Pixel Burger <input type="checkbox" name="extraLifePixelBurger" value="Yes" id="extraLifePixelBurgCheckbox"></br>
 amount: 
 </br>
 <input type="button" onclick="extraLifePixelBurgPlus()" value="+">
@@ -104,7 +104,7 @@ Price: <input type="text" id="extraLifePixelBurgPrice" name="extraLifePixelBurgP
 </br>
 </br>
 <!-- big byte order area -->
-the Big Byte <input type="checkbox" name="theBigByte" value="Yes"></br>
+the Big Byte <input type="checkbox" name="theBigByte" value="Yes" id="theBigByteCheckbox"></br>
 amount: 
 </br>
 <input type="button" onclick="theBigBytePlus()" value="+">
@@ -117,7 +117,7 @@ Price: <input type="text" id="theBigBytePrice" name="theBigBytePrice" value="5.0
 </br>
     </br>
 <!-- theTexasDownload order area -->
-The Texas Download <input type="checkbox" name="theTexasDownload" value="Yes"></br>
+The Texas Download <input type="checkbox" name="theTexasDownload" value="Yes" id="theTexasDownloadCheckbox"></br>
 amount: 
 </br>
 <input type="button" onclick="theTexasDownloadPlus()" value="+">
@@ -130,7 +130,7 @@ Price: <input type="text" id="theTexasDownloadPrice" name="theTexasDownloadPrice
     </br>
     </br>
       <!-- cDOSCheesePizza order area -->
-      c DOS Cheese Pizza <input type="checkbox" name="cDOSCheesePizza" value="Yes"></br>
+      c DOS Cheese Pizza <input type="checkbox" name="cDOSCheesePizza" value="Yes" id="cDOSCheesePizzaCheckbox"></br>
 amount: 
 </br>
 <input type="button" onclick="cDOSCheesePizzaPlus()" value="+">
@@ -143,7 +143,7 @@ Price: <input type="text" id="cDOSCheesePizzaPrice" name="cDOSCheesePizzaPrice" 
     </br>
     </br>
           <!-- pepperoniParserPizza order area -->
-The Pepperoni Parser Pizza <input type="checkbox" name="pepperoniParserPizza" value="Yes"></br>
+The Pepperoni Parser Pizza <input type="checkbox" name="pepperoniParserPizza" value="Yes" id="pepperoniParserPizzaCheckbox"></br>
 amount: 
 </br>
 <input type="button" onclick="pepperoniParserPizzaPlus()" value="+">
@@ -156,7 +156,7 @@ Price: <input type="text" id="pepperoniParserPizzaPrice" name="pepperoniParserPi
     </br>
     </br>
           <!-- hawaiiZonePizza order area -->
-The Hawaii Zone Pizza <input type="checkbox" name="hawaiiZonePizza" value="Yes"></br>
+The Hawaii Zone Pizza <input type="checkbox" name="hawaiiZonePizza" value="Yes" id="hawaiiZonePizzaCheckbox"></br>
 amount: 
 </br>
 <input type="button" onclick="hawaiiZonePizzaPlus()" value="+">
@@ -169,7 +169,7 @@ Price: <input type="text" id="hawaiiZonePizzaPrice" name="hawaiiZonePizzaPrice" 
     </br>
     </br>
           <!-- vegetablePizza order area -->
-The VEGETAble Pizza <input type="checkbox" name="vegetablePizza" value="Yes"></br>
+The VEGETAble Pizza <input type="checkbox" name="vegetablePizza" value="Yes" id="vegetablePizzaCheckbox"></br>
 amount: 
 </br>
 <input type="button" onclick="vegetablePizzaPlus()" value="+">
@@ -182,7 +182,7 @@ Price: <input type="text" id="vegetablePizzaPrice" name="vegetablePizzaPrice" va
     </br>
     </br>
           <!-- pixelCola order area -->
-Pixel Cola <input type="checkbox" name="pixelCola" value="Yes"></br>
+Pixel Cola <input type="checkbox" name="pixelCola" value="Yes" id="pixelColaCheckbox"></br>
 amount: 
 </br>
 <input type="button" onclick="pixelColaPlus()" value="+">
@@ -195,7 +195,7 @@ Price: <input type="text" id="pixelColaPrice" name="pixelColaPrice" value="1.00"
     </br>
     </br>
           <!-- pixelOrange order area -->
-Pixel Orange <input type="checkbox" name="pixelOrange" value="Yes"></br>
+Pixel Orange <input type="checkbox" name="pixelOrange" value="Yes" id="pixelOrangeCheckbox"></br>
 amount: 
 </br>
 <input type="button" onclick="pixelOrangePlus()" value="+">
@@ -208,7 +208,7 @@ Price: <input type="text" id="pixelOrangePrice" name="pixelOrangePrice" value="1
     </br>
     </br>
           <!-- pixelIceCream order area -->
-Pixel Ice Cream <input type="checkbox" name="pixelIceCream" value="Yes"></br>
+Pixel Ice Cream <input type="checkbox" name="pixelIceCream" value="Yes" id="pixelIceCreamCheckbox"></br>
 amount: 
 </br>
 <input type="button" onclick="pixelIceCreamPlus()" value="+">
@@ -221,7 +221,7 @@ Price: <input type="text" id="pixelIceCreamPrice" name="pixelIceCreamPrice" valu
     </br>
     </br>
           <!-- pixelCookies order area -->
-Pixel Cookies <input type="checkbox" name="pixelCookies" value="Yes"></br>
+Pixel Cookies <input type="checkbox" name="pixelCookies" value="Yes" id="pixelCookiesCheckbox"></br>
 amount: 
 </br>
 <input type="button" onclick="pixelCookiesPlus()" value="+">
