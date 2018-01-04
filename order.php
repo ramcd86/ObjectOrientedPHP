@@ -1,17 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <title>PHP</title>
-</head>
-<link href="style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand|Work+Sans" rel="stylesheet">
-<body>
-
 <?php
 
-include ('menuitems.include.php');
+require ("menuitems.include.php");
+require ("header.temp.html");
 
 $itemCount = 0;
 $totPrice = 0;
@@ -150,8 +140,5 @@ if ( $itemCount > 3) {
     echo "Your total is: &#8364;" . number_format($totPrice, 2, '.', ' ');
 }
 
+require ("footer.temp.html");
 ?>
-
-</body>
-
-</html>
