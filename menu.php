@@ -27,33 +27,49 @@ Number: <input type="text" id="itemCount" value="0"></br>
 
       <!-- pixelFries order area -->
       <div id="pixelFriesDiv" class="unselected">
-      Pixel Fries <input type="checkbox" name="pixelFries" id="pixelFriesCheckbox" value="Yes">
+      <div class="menu_title">Pixel Fries</div> 
+      <div class="menu_selector_W">
+      <div class="menu_selector_R">"A hearty helpin' of our Pixelated Pixel Fries!"</div>
+      <div class="menu_selector_L"><label>Add to order <input type="checkbox" name="pixelFries" id="pixelFriesCheckbox" value="Yes"></label>
       </br>
+
 amount: 
+
 </br>
-<input type="button" onclick="pixelFriesPlus()" value="+">
-</br>
-<input type="text" id="pixelFriesCount" name="pixelFriesCount" value="1">
-</br>
-<input type="button" onclick="pixelFriesMinus()" value="-">
-</br>
-Price: <input type="text" id="pixelFriesPrice" name="pixelFriesPrice" value="2.00" readonly>
-    </br>
-    </br>
+    <input type="button" onclick="pixelFriesPlus()" value="+">
+    <input type="text" id="pixelFriesCount" name="pixelFriesCount" value="1">
+    <input type="button" onclick="pixelFriesMinus()" value="-">
+
+</div>
+</div>
+
+<div class="menu_price">Price: 	&#8364;<input type="textarea" id="pixelFriesPrice" name="pixelFriesPrice" value="2.00" readonly></div>
     </div>
+
+
+
           <!-- polygonFries order area -->
-          Polygon Fries <label>Add to order<input type="checkbox" id="polygonFriesCheckbox" name="polygonFries" value="Yes"></br></label>
-amount: 
-</br>
-<input type="button" onclick="polygonFriesPlus()" value="+">
-</br>
-<input type="text" id="polygonFriesCount" name="polygonFriesCount" value="1">
-</br>
-<input type="button" onclick="polygonFriesMinus()" value="-">
-</br>
-Price: <input type="text" id="polygonFriesPrice" name="polygonFriesPrice" value="3.00" readonly>
+          <div id="polygonFriesDiv" class="unselected">
+          <div class="menu_title">Polygon Fries Fries</div> 
+          <div class="menu_selector_W">
+          <div class="menu_selector_R">"A hearty helpin' of our Pixelated Pixel Fries!"</div>
+          <div class="menu_selector_L"><label>Add to order <input type="checkbox" name="polygonFries" id="polygonFriesCheckbox" value="Yes"></label>
+          </br>
+    
+    amount: 
+    
     </br>
-    </br>
+        <input type="button" onclick="polygonFriesPlus()" value="+">
+        <input type="text" id="polygonFriesCount" name="polygonFriesCount" value="1">
+        <input type="button" onclick="polygonFriesMinus()" value="-">
+    
+    </div>
+    </div>
+    
+    <div class="menu_price">Price: 	&#8364;<input type="textarea" id="polygonFriesPrice" name="polygonFriesPrice" value="3.00" readonly></div>
+        </div>
+
+        
           <!-- terminalTacoFries order area -->
 Terminal Taco Fries <input type="checkbox" name="terminalTacoFries" value="Yes" id="terminalTacoFriesCheckbox"></br>
 amount: 
