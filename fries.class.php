@@ -24,31 +24,31 @@ class Fries {
     }
 
     public function echoFriesType() {
-        echo "<h1>You have ordered the ".$this->friesType." which contains:</h1> </br>";
+        echo "<h1>You have ordered the ".$this->friesType." which contains:</h1>  ";
     }
 
     public function echoCheese() {
-        $this->cheese = "<h3>A topping of melted C DOS Cheddar,</h3> </br>";
+        $this->cheese = "<h3>A topping of melted C DOS Cheddar,</h3>  ";
         echo $this->cheese;
     }
 
     public function echoSeasoning() {
-        $this->pixelPepperSeasoning = "<h3>A hearty sprinkling of our famous Pixel Pepper Seasoning,</h3> </br>";
+        $this->pixelPepperSeasoning = "<h3>A hearty sprinkling of our famous Pixel Pepper Seasoning,</h3>  ";
         echo $this->pixelPepperSeasoning;
     }
 
     public function echoChilli() {
-        $this->emeraldHillChilli = "<h3>A heap of our eye-watering Emerald Hill Chilli,</h3> </br>";
+        $this->emeraldHillChilli = "<h3>A heap of our eye-watering Emerald Hill Chilli,</h3>  ";
         echo $this->emeraldHillChilli;
     }
 
     public function echoGarlic() {
-        $this->gitGarlicMayo = "<h3>A pull request of our Git Garlic Mayo</h3> </br>";
+        $this->gitGarlicMayo = "<h3>A pull request of our Git Garlic Mayo</h3>  ";
         echo $this->gitGarlicMayo;
     }
 
     public function echoFries() {
-        $this->fries = "<h3>On top of our freshly cut Pixel Fries!</h3> </br>";
+        $this->fries = "<h3>On top of our freshly cut Pixel Fries!</h3>  ";
         echo $this->fries;
     }
 

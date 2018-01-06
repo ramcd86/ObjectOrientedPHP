@@ -1,13 +1,12 @@
 <form action="order.php" method="POST">
-    <div class="total">
-        Total: <input type="text" id="finalTotal" value="0.00"></br>
-        Number: <input type="text" id="itemCount" value="0"></br>
-        <input type="submit">
+    <div class="total_bar_replacer" id="totalBarReplacer"></div>
+    <div class="total_bar" id="totalBar">
+        Your total: &#8364; <input type="text" id="finalTotal" value="0.00">
+        <input type="submit" value="Place order">
     </div>
-    </br>
-    </br>
 
     <!-- pixelFries order area -->
+    <div class="area_title">Our range of Fries!</div>
     <div id="pixelFriesDiv" class="unselected">
         <div class="menu_title">Pixel Fries</div>
         <div class="menu_selector_W">
@@ -95,6 +94,7 @@
     <!--
     Pixel Burger Order Area
     -->
+    <div class="area_title">Our range of Burgers!</div>
     <div id="pixelBurgDiv" class="unselected">
         <div class="menu_title">Pixel Burger</div>
         <div class="menu_selector_W">
@@ -177,6 +177,7 @@
         <div class="menu_price">Price: &#8364;<input type="textarea" id="theTexasDownloadPrice" name="theTexasDownloadPrice" value="4.00" readonly></div>
     </div>
     <!-- cDOSCheesePizza order area -->
+    <div class="area_title">Our range of Pizzas!</div>
     <div id="cDOSCheesePizzaDiv" class="unselected">
         <div class="menu_title">C DOS Cheese Pizza</div>
         <div class="menu_selector_W">
@@ -256,7 +257,9 @@
 
         <div class="menu_price">Price: &#8364;<input type="textarea" id="vegetablePizzaPrice" name="vegetablePizzaPrice" value="11.00" readonly></div>
     </div>
+
     <!-- pixelCola order area -->
+    <div class="area_title">A little something extra!</div>
     <div id="pixelColaDiv" class="unselected">
         <div class="menu_title">Pixel Cola</div>
         <div class="menu_selector_W">
@@ -336,8 +339,10 @@
 
         <div class="menu_price">Price: &#8364;<input type="textarea" id="pixelCookiesPrice" name="pixelCookiesPrice" value="3.00" readonly></div>
     </div>
-    <!-- Submit -->
-    <input type="submit">
+
+
+    <div class="area_title">Remember, order 4 unique items or more for a 10% discount!</div>
+
 </form>
 </br>
 </br>

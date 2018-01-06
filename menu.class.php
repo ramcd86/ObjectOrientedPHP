@@ -35,7 +35,6 @@ class Menu {
             $pixelBurger->echoLettuce(),
             $pixelBurger->echoBurgerBun()
         );
-        echo "</br></br>";
     }
     
     public function extraLifePixelBurger() {
@@ -47,7 +46,6 @@ class Menu {
             $extraLifePixelBurger->echoLettuce(),
             $extraLifePixelBurger->echoBurgerBun()
         );
-        echo "</br></br>";
     }
     
     public function theBigByte() {
@@ -60,7 +58,6 @@ class Menu {
             $theBigByte->echoBurgerSauce(),
             $theBigByte->echoBurgerBun()
         );
-        echo "</br></br>";
     }
     
     public function theTexasDownload() {
@@ -73,7 +70,6 @@ class Menu {
             $theTexasDownload->echoBBQSauce(),
             $theTexasDownload->echoBurgerBun()
         );
-        echo "</br></br>";
     }
 
 /**
@@ -90,7 +86,6 @@ class Menu {
         $cDOSCheesePizza->echoTomatoSauce(),
         $cDOSCheesePizza->echoPizzaBase()
     );
-    echo "</br></br>";
 }
 
 public function pepperoniParserPizza() {
@@ -102,7 +97,6 @@ public function pepperoniParserPizza() {
         $pepperoniParserPizza->echoTomatoSauce(),
         $pepperoniParserPizza->echoPizzaBase()
     );
-    echo "</br></br>";
 }
 
 public function hawaiiZonePizza() {
@@ -115,7 +109,6 @@ public function hawaiiZonePizza() {
         $hawaiiZonePizza->echosweetCorn(),
         $hawaiiZonePizza->echoPizzaBase()
     );
-    echo "</br></br>";
 }
 
 public function vegetablePizza() {
@@ -127,7 +120,6 @@ public function vegetablePizza() {
         $vegetablePizza->echoTomatoSauce(),
         $vegetablePizza->echoPizzaBase()
     );
-    echo "</br></br>";
 }
 
 /**
@@ -144,7 +136,6 @@ public function pixelFries() {
         $pixelFries->echoSeasoning(),
         $pixelFries->echoFries()
     );
-    echo "</br></br>";
 }
 
 public function polygonFries() {
@@ -154,7 +145,6 @@ public function polygonFries() {
         $polygonFries->echoSeasoning(),
         $polygonFries->echoLargeFries()
     );
-    echo "</br></br>";
 }
 
 public function terminalTacoFries() {
@@ -165,7 +155,6 @@ public function terminalTacoFries() {
         $terminalTacoFries->echoChilli(),
         $terminalTacoFries->echoFries()
     );
-    echo "</br></br>";
 }
 
 public function cDOSCheeseFries() {
@@ -176,7 +165,6 @@ public function cDOSCheeseFries() {
         $cDOSCheeseFries->echoGarlic(),
         $cDOSCheeseFries->echoFries()
     );
-    echo "</br></br>";
 }
 
 public function pixelCola() {
@@ -185,7 +173,6 @@ public function pixelCola() {
         $pixelCola->echoExtrasType(),
         $pixelCola->echoCola()
     );
-    echo "</br></br>";
 }
 
 public function pixelOrange() {
@@ -194,7 +181,6 @@ public function pixelOrange() {
         $pixelOrange->echoExtrasType(),
         $pixelOrange->echoOrange()
     );
-    echo "</br></br>";
 }
 
 public function pixelIceCream() {
@@ -203,7 +189,6 @@ public function pixelIceCream() {
         $pixelIceCream->echoExtrasType(),
         $pixelIceCream->echoIceCream()
     );
-    echo "</br></br>";
 }
 
 public function pixelCookies() {
@@ -212,7 +197,6 @@ public function pixelCookies() {
         $pixelCookies->echoExtrasType(),
         $pixelCookies->echoCookies()
     );
-    echo "</br></br>";
 }
 
 }

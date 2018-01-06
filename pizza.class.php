@@ -32,41 +32,41 @@ class Pizza {
     }
 
     public function echoPizzaType() {
-        echo "You have ordered the ".$this->pizzaType." which contains: </br>";
+        echo "<h1>You have ordered the ".$this->pizzaType." which contains:</h1>";
     }
 
     public function echoTomatoSauce() {
-        $this->tomatoSauce = "A helping of our Cyber Tomato Sauce, </br>";
+        $this->tomatoSauce = "<h3>A helping of our Cyber Tomato Sauce,  </h3>";
         echo $this->tomatoSauce;
     }
 
     public function echoCheese() {
-        $this->cheese = "A handful of our grated C DOS Cheedar, </br>";
+        $this->cheese = "<h3>A handful of our grated C DOS Cheedar,  </h3>";
         echo $this->cheese;
     }
 
     public function echoPepperoni() {
-        $this->pepperoni = "An invasion of our Object Oriented Pepperoni Discs, </br>";
+        $this->pepperoni = "<h3>An invasion of our Object Oriented Pepperoni Discs,  </h3>";
         echo $this->pepperoni;
     }
 
     public function echoPineapple() {
-        $this->pineapple = "An array of Pineapple Blocks, </br>";
+        $this->pineapple = "<h3>An array of Pineapple Blocks,  </h3>";
         echo $this->pineapple;
     }
 
     public function echoHam() {
-        $this->ham = "An upload of Ham, </br>";
+        $this->ham = "<h3>An upload of Ham,  </h3>";
         echo $this->ham;
     }
 
     public function echoSweetCorn() {
-        $this->sweetCorn = "A loot crate full of our Super Sweet Sweet Corn, </br>";
+        $this->sweetCorn = "<h3>A loot crate full of our Super Sweet Sweet Corn,  </h3>";
         echo $this->sweetCorn;
     }
 
     public function echoPizzaBase() {
-        $this->pizzaBase = "All laid down on our secret receipie Pixel Pizza base!";
+        $this->pizzaBase = "<h3>All laid down on our secret receipie Pixel Pizza base!  </h3>";
         echo $this->pizzaBase;
     }
 

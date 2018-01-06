@@ -66,6 +66,21 @@ var finalTotal = 0;
 var itemCount = 0;
 var totalComp = document.getElementById("finalTotal");
 var totalItem = document.getElementById("itemCount");
+var headHeight = document.getElementById("headerWrap").offsetHeight;
+
+window.onscroll = function() {
+    barRep()
+}
+
+function barRep() {
+    if (window.pageYOffset >= headHeight) {
+        document.getElementById("totalBar").classList = "total_bar_float";
+        document.getElementById("totalBarReplacer").classList = "total_bar_replacer_float";
+    } else {
+        document.getElementById("totalBar").classList = "total_bar";
+        document.getElementById("totalBarReplacer").classList = "total_bar_replacer";
+    }
+}
 
 
 document.onclick = function() {
@@ -264,8 +279,6 @@ document.onclick = function() {
     } else {
         totalComp.value = (finalTotal).toFixed(2);
     }
-
-    totalItem.value = itemCount;
 };
 
 

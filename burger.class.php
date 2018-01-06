@@ -26,36 +26,36 @@ class Burger {
     }
 
     public function echoBurgerType() {
-        echo "<h1>You have ordered the ".$this->burgerType." which contains:</h1> </br>";
+        echo "<h1>You have ordered the ".$this->burgerType." which contains:</h1>  ";
     }
 
     public function echoBeefPatty() {
-        $this->beefPatty = "<h3>A fresh ground Pixel Patty,</h3> </br>";
+        $this->beefPatty = "<h3>A fresh ground Pixel Patty,</h3>  ";
         echo $this->beefPatty;
     }
 
     public function echoDoubleBeefPatty() {
-        $this->doubleBeefPatty = "<h3>A set of Two Pixel patties,</h3> </br>";
+        $this->doubleBeefPatty = "<h3>A set of Two Pixel patties,</h3>  ";
         echo $this->doubleBeefPatty;
     }
 
     public function echoCheese() {
-        $this->cheese = "<h3>A slice of C DOS Cheddar,</h3> </br>";
+        $this->cheese = "<h3>A slice of C DOS Cheddar,</h3>  ";
         echo $this->cheese;
     }
 
     public function echoLettuce() {
-        $this->lettuce = "<h3>A sprinkle of crisp Digitized Iceberg Lettuce,</h3> </br>";
+        $this->lettuce = "<h3>A sprinkle of crisp Digitized Iceberg Lettuce,</h3>  ";
         echo $this->lettuce;
     }
 
     public function echoBurgerSauce() {
-        $this->burgerSauce = "<h3>A tablespoon of our home made Open Source Burger Sauce,</h3> </br>";
+        $this->burgerSauce = "<h3>A tablespoon of our home made Open Source Burger Sauce,</h3>  ";
         echo $this->burgerSauce;
     }
 
     public function echoBBQSauce() {
-        $this->bbqSauce = "<h3>A tablespoon of our authentic Binary BBQ sauce,</h3> </br>";
+        $this->bbqSauce = "<h3>A tablespoon of our authentic Binary BBQ sauce,</h3>  ";
         echo $this->bbqSauce;
     }
 
