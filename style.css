@@ -1,3 +1,12 @@
+/** 
+ * Package Name: PIXEL PIZZA, WEBELEVATE 6.0 ASSIGNMENT 1.
+ * Author: ROSS MCDERMOTT
+ * Required Package Files: footer.temp.html, header.temp.html, menu.temp.html, style.css, evaulator.js, burger.class.php, extras.class.php, fries.class.php, pizza.class.php, menu.class.php, index.php, menuitems.include.php, order.php, order_action.php, background.jpg, pgbh.png, pplogo.svg.
+*/
+
+
+/** Create Applicable CSS styles for use in DOM. */
+
 html {
     font-family: 'Work Sans', sans-serif;
     font-size: 16px;
@@ -259,10 +268,10 @@ label:hover {
     width: 50%;
     min-height: 100px;
     box-sizing: border-box;
-    padding: 3px;
-    font-size: 1.2rem;
+    padding: 10px;
+    font-weight: 900;
+    font-size: 1.1rem;
     text-align: center;
-    font-style: italic;
     border-left: #0eb416;
     border-left-style: solid;
     border-left-width: 5px;
@@ -312,6 +321,7 @@ label:hover {
     color: #FFF;
     border-color: rgb(247, 247, 247);
     border-style: solid;
+    border-width: 3px;
     box-sizing: border-box;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     margin-bottom: 1.5vh;
@@ -331,6 +341,7 @@ label:hover {
     color: #FFF;
     border-color: rgb(247, 247, 247);
     border-style: solid;
+    border-width: 3px;
     box-sizing: border-box;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     margin-bottom: 2.5vh;
@@ -341,7 +352,7 @@ label:hover {
     width: 50vw;
     margin-left: auto;
     margin-right: auto;
-    border-width: 1px;
+    border-width: 3px;
     background-color: rgb(247, 247, 247);
     border-color: rgb(247, 247, 247);
     border-style: solid;
@@ -357,7 +368,7 @@ label:hover {
     margin-right: auto;
     box-shadow: 0 10px 20px rgba(88, 155, 88, 0.19), 0 6px 6px rgba(88, 155, 88, 0.23);
     background-color: rgb(247, 247, 247);
-    border-width: 1px;
+    border-width: 3px;
     border-color: rgb(88, 155, 88);
     border-style: solid;
     box-sizing: border-box;

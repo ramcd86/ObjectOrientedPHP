@@ -1,30 +1,27 @@
 <?php
 
-/**
- * Pixel Burger = echoBurgerType(); , echoBeefPatty(); , echoCheese(); , echoLettuce(); , echoBurgerBun();
- * Extra Life Pixel Burger = echoBurgerType(); , echoDoublebeefPatty(); , echoCheese(); , echoLettuce (); , echoBurgerBun(); ,
- * The Big Byte = echoBurgerType(); , echoDoubleBeefPatty(); , echoCheese(); , echoBurgerSauce(); , echoBurgerBun();
- * The Texas Download = echoBurgerType(); , echoBeefPatty(); , echoCheese(); , echoBBQSauce(); , echoBurgerBun();  
- */
-/**
- * C DOS Cheese Pizza = echoPizzaType(), echoCheese(), echoTomatoSauce(), echoPizzaBase;
- * Pepperoni Parser Pizza = echoPizzaType(), echoPepperoni(), echoCheese(), echoTomatoSauce(), echoPizzaBase();
- * Hawaii Zone Pizza = echoPizzaType(), echoCheese(), echoHam(), echoPineapple(), echoTomatoSauce(), echoPizzaBase();
- * VEGETAble Pizza = echoPizzaType(), echoTomatoSauce(), echoPineapple(), echoSweetcorn();
- */
-/**
- * Pixel Fries = echoSeasoning(), echoFries();
- * Polygon Fries = echoSeasoning(), echoLargeFries();
- * Terminal Taco Fries  = echoCheese(), echoChilli(), echoFries();
- * C DOS Cheese Fries = echoCheese(), echoGarlic(), echoLargeFries();
- */
+/** 
+ * Package Name: PIXEL PIZZA, WEBELEVATE 6.0 ASSIGNMENT 1.
+ * Author: ROSS MCDERMOTT
+ * Required Package Files: footer.temp.html, header.temp.html, menu.temp.html, style.css, evaulator.js, burger.class.php, extras.class.php, fries.class.php, pizza.class.php, menu.class.php, index.php, menuitems.include.php, order.php, order_action.php, background.jpg, pgbh.png, pplogo.svg.
+*/
+
+
+// Include dependencies
 
 include ('burger.class.php');
 include ('pizza.class.php');
 include ('fries.class.php');
 include ('extras.class.php');
 
+
+// Create a class template which builds individual menu items from ingredient classes.
+
 class Menu {
+
+
+
+    // Burger Functions
 
     public function pixelBurger() {
         $pixelBurgerArray = array(
@@ -72,12 +69,10 @@ class Menu {
         );
     }
 
-/**
- * C DOS Cheese Pizza = echoPizzaType(), echoCheese(), echoTomatoSauce(), echoPizzaBase;
- * Pepperoni Parser Pizza = echoPizzaType(), echoPepperoni(), echoCheese(), echoTomatoSauce(), echoPizzaBase();
- * Hawaii Zone Pizza = echoPizzaType(), echoCheese(), echoHam(), echoPineapple(), echoTomatoSauce(), echoPizzaBase();
- * VEGETAble Pizza = echoPizzaType(), echoTomatoSauce(), echoPineapple(), echoSweetCorn(), echoPizzaBase();
- */
+    
+
+    // Pizza Functions
+
     public function cDOSCheesePizza() {
     $cDOSCheesePizzaArray = array(
         $cDOSCheesePizza = new Pizza("C DOS Cheese Pizza"),
@@ -122,12 +117,9 @@ public function vegetablePizza() {
     );
 }
 
-/**
- * Pixel Fries = echoSeasoning(), echoFries();
- * Polygon Fries = echoSeasoning(), echoLargeFries();
- * Terminal Taco Fries  = echoCheese(), echoChilli(), echoFries();
- * C DOS Cheese Fries = echoCheese(), echoGarlic(), echoLargeFries();
- */
+
+
+// Fries Functions
 
 public function pixelFries() {
     $pixelFriesArray = array(
@@ -166,6 +158,10 @@ public function cDOSCheeseFries() {
         $cDOSCheeseFries->echoFries()
     );
 }
+
+
+
+// Extras Functions
 
 public function pixelCola() {
     $pixelColaArray = array(

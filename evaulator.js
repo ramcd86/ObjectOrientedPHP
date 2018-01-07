@@ -1,3 +1,12 @@
+/** 
+ * Package Name: PIXEL PIZZA, WEBELEVATE 6.0 ASSIGNMENT 1.
+ * Author: ROSS MCDERMOTT
+ * Required Package Files: footer.temp.html, header.temp.html, menu.temp.html, style.css, evaulator.js, burger.class.php, extras.class.php, fries.class.php, pizza.class.php, menu.class.php, index.php, menuitems.include.php, order.php, order_action.php, background.jpg, pgbh.png, pplogo.svg.
+ */
+
+
+// Assign DOM elements to variables, create counters for use in calculating total value of order.
+
 var pixelFriesPrice = parseInt(document.getElementById("pixelFriesPrice").value);
 var pixelFriesCount = parseInt(document.getElementById("pixelFriesCount").value);
 var pixelFriesTotal = 0;
@@ -68,9 +77,13 @@ var totalComp = document.getElementById("finalTotal");
 var totalItem = document.getElementById("itemCount");
 var headHeight = document.getElementById("headerWrap").offsetHeight;
 
+
+
+// Build 'Total Bar' functionality, attach total bar to top of window when user scrolls to headheight.
+
 window.onscroll = function() {
-    barRep()
-}
+    barRep();
+};
 
 function barRep() {
     if (window.pageYOffset >= headHeight) {
@@ -82,6 +95,9 @@ function barRep() {
     }
 }
 
+
+
+// Dom onclick interaction to determine if a checkbox has been checked or unchecked to see if we're going to add the number to the total listed above.
 
 document.onclick = function() {
     if (document.getElementById("pixelFriesCheckbox").checked == true) {
@@ -270,9 +286,21 @@ document.onclick = function() {
         pixelCookiesTotal = 0;
     }
 
+
+
+    // Calculate the Final Total of the Order.
+
     finalTotal = parseInt(pixelFriesTotal + polygonFriesTotal + terminalTacoFriesTotal + cDOSCheeseFriesTotal + pixelBurgTotal + extraLifePixelBurgTotal + theBigByteTotal + theTexasDownloadTotal + cDOSCheesePizzaTotal + pepperoniParserPizzaTotal + hawaiiZonePizzaTotal + vegetablePizzaTotal + pixelColaTotal + pixelOrangeTotal + pixelIceCreamTotal + pixelCookiesTotal);
 
+
+
+    // Calculate the number of 'Unique' items the user has selected.
+
     itemCount = parseInt(pixelFriesTotalCount + polygonFriesTotalCount + terminalTacoFriesTotalCount + cDOSCheeseFriesTotalCount + pixelBurgTotalCount + extraLifePixelBurgTotalCount + theBigByteTotalCount + theTexasDownloadTotalCount + cDOSCheesePizzaTotalCount + pepperoniParserPizzaTotalCount + hawaiiZonePizzaTotalCount + vegetablePizzaTotalCount + pixelColaTotalCount + pixelOrangeTotalCount + pixelIceCreamTotalCount + pixelCookiesTotalCount);
+
+
+
+    // Apply a 10% discount if the user has 4 or more 'Unique' items selected.    
 
     if (itemCount > 3) {
         totalComp.value = (finalTotal / 100 * 90).toFixed(2);
@@ -281,6 +309,9 @@ document.onclick = function() {
     }
 };
 
+
+
+// Calculate and count the individual cost of order items and reflect that in the DOM.
 
 function pixelFriesPlus(value) {
     pixelFriesPrice = document.getElementById("pixelFriesPrice").value;

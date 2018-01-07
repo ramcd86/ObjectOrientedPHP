@@ -1,13 +1,15 @@
 
 <?php
 
-// Pizza object spawn template for pixel.Pizza Pizzas!
-/**
- * 	Cheese Pizza: Contains ‘Pizza Base, Tomato Sauce, Cheese’
-	Pepperoni Pizza: Contains ‘Pizza Base, Tomato Sauce, Cheese, Pepperoni’
-	Hawaiian Pizza: Contains ‘Pizza Base, Tomato Sauce, Cheese, Pineapple, Ham’
-	Vegetarian Pizza: Contains ‘Pizza Base, Tomato Sauce, Pineapple, Sweetcorn’
- */
+/** 
+ * Package Name: PIXEL PIZZA, WEBELEVATE 6.0 ASSIGNMENT 1.
+ * Author: ROSS MCDERMOTT
+ * Required Package Files: footer.temp.html, header.temp.html, menu.temp.html, style.css, evaulator.js, burger.class.php, extras.class.php, fries.class.php, pizza.class.php, menu.class.php, index.php, menuitems.include.php, order.php, order_action.php, background.jpg, pgbh.png, pplogo.svg.
+*/
+
+
+
+// Build ingredient list object for Pixel Pizza Pizzas, individual pizzas will be assembled from ingredients listed below.
 
 class Pizza {
 

@@ -1,345 +1,473 @@
+<!-- # BUILD MENU TEMPLATE -->
+
+<!-- # BUILD USER FORM -->
+
 <form action="order.php" method="POST">
+
+
+    <!-- # BUILD USER TOTAL COST, AND SUBMIT BUTTON -->
+
     <div class="total_bar_replacer" id="totalBarReplacer"></div>
     <div class="total_bar" id="totalBar">
-        Your total: &#8364; <input type="text" id="finalTotal" value="0.00">
+        Your total: &#8364;
+        <input type="text" id="finalTotal" value="0.00">
         <input type="submit" value="Place order">
     </div>
 
-    <!-- pixelFries order area -->
     <div class="area_title">Our range of Fries!</div>
+
+
+    <!-- # BUILD PIXEL FRIES ORDER INPUT -->
+
     <div id="pixelFriesDiv" class="unselected">
         <div class="menu_title">Pixel Fries</div>
         <div class="menu_selector_W">
             <div class="menu_selector_R">"A hearty helpin' of our Pixelated Pixel Fries!"</div>
-            <div class="menu_selector_L"><label>Add to order <input type="checkbox" name="pixelFries" id="pixelFriesCheckbox" value="Yes"></label>
+            <div class="menu_selector_L">
+                <label>Add to order
+                    <input type="checkbox" name="pixelFries" id="pixelFriesCheckbox" value="Yes">
+                </label>
                 </br>
 
                 amount:
 
                 </br>
                 <input type="button" onclick="pixelFriesPlus()" value="+">
-                <input type="text" id="pixelFriesCount" name="pixelFriesCount" value="1">
+                <input type="text" id="pixelFriesCount" name="pixelFriesCount" value="1" readonly>
                 <input type="button" onclick="pixelFriesMinus()" value="-">
 
             </div>
         </div>
 
-        <div class="menu_price">Price: &#8364;<input type="textarea" id="pixelFriesPrice" name="pixelFriesPrice" value="2.00" readonly></div>
+        <div class="menu_price">Price: &#8364;
+            <input type="textarea" id="pixelFriesPrice" name="pixelFriesPrice" value="2.00" readonly>
+        </div>
     </div>
 
 
+    <!-- # BUILD POLYGON FRIES ORDER INPUT -->
 
-    <!-- polygonFries order area -->
     <div id="polygonFriesDiv" class="unselected">
         <div class="menu_title">Polygon Fries</div>
         <div class="menu_selector_W">
-            <div class="menu_selector_R">"A hearty helpin' of our Pixelated Pixel Fries!"</div>
-            <div class="menu_selector_L"><label>Add to order <input type="checkbox" name="polygonFries" id="polygonFriesCheckbox" value="Yes"></label>
+            <div class="menu_selector_R">"Just like our Pixel Fries, but with more depth and scale!"</div>
+            <div class="menu_selector_L">
+                <label>Add to order
+                    <input type="checkbox" name="polygonFries" id="polygonFriesCheckbox" value="Yes">
+                </label>
                 </br>
 
                 amount:
 
                 </br>
                 <input type="button" onclick="polygonFriesPlus()" value="+">
-                <input type="text" id="polygonFriesCount" name="polygonFriesCount" value="1">
+                <input type="text" id="polygonFriesCount" name="polygonFriesCount" value="1" readonly>
                 <input type="button" onclick="polygonFriesMinus()" value="-">
 
             </div>
         </div>
 
-        <div class="menu_price">Price: &#8364;<input type="textarea" id="polygonFriesPrice" name="polygonFriesPrice" value="3.00" readonly></div>
+        <div class="menu_price">Price: &#8364;
+            <input type="textarea" id="polygonFriesPrice" name="polygonFriesPrice" value="3.00" readonly>
+        </div>
     </div>
 
 
-    <!-- terminalTacoFries order area -->
+    <!-- # BUILD TERMINAL TACO FRIES ORDER INPUT -->
+
     <div id="terminalTacoFriesDiv" class="unselected">
         <div class="menu_title">Terminal Taco Fries</div>
         <div class="menu_selector_W">
-            <div class="menu_selector_R">"A hearty helpin' of our Pixelated Pixel Fries!"</div>
-            <div class="menu_selector_L"><label>Add to order <input type="checkbox" name="terminalTacoFries" id="terminalTacoFriesCheckbox" value="Yes"></label>
+            <div class="menu_selector_R">"Our famous Pixel Fries topped with Chilli & Cheese!"</div>
+            <div class="menu_selector_L">
+                <label>Add to order
+                    <input type="checkbox" name="terminalTacoFries" id="terminalTacoFriesCheckbox" value="Yes">
+                </label>
                 </br>
 
                 amount:
 
                 </br>
                 <input type="button" onclick="terminalTacoFriesPlus()" value="+">
-                <input type="text" id="terminalTacoFriesCount" name="terminalTacoFriesCount" value="1">
+                <input type="text" id="terminalTacoFriesCount" name="terminalTacoFriesCount" value="1" readonly>
                 <input type="button" onclick="terminalTacoFriesMinus()" value="-">
 
             </div>
         </div>
 
-        <div class="menu_price">Price: &#8364;<input type="textarea" id="terminalTacoFriesPrice" name="terminalTacoFriesPrice" value="4.00" readonly></div>
+        <div class="menu_price">Price: &#8364;
+            <input type="textarea" id="terminalTacoFriesPrice" name="terminalTacoFriesPrice" value="4.00" readonly>
+        </div>
     </div>
-    <!-- cDOSCheeseFries order area -->
+
+
+    <!-- # BUILD C DOS CHEESE FRIES ORDER INPUT -->
+
     <div id="cDOSCheeseFriesDiv" class="unselected">
         <div class="menu_title">C DOS Cheese Fries</div>
         <div class="menu_selector_W">
-            <div class="menu_selector_R">"A hearty helpin' of our Pixelated Pixel Fries!"</div>
-            <div class="menu_selector_L"><label>Add to order <input type="checkbox" name="cDOSCheeseFries" id="cDOSCheeseFriesCheckbox" value="Yes"></label>
+            <div class="menu_selector_R">"Our Pixel Fries topped with Cheese and Garlic Mayo, yum!"</div>
+            <div class="menu_selector_L">
+                <label>Add to order
+                    <input type="checkbox" name="cDOSCheeseFries" id="cDOSCheeseFriesCheckbox" value="Yes">
+                </label>
                 </br>
 
                 amount:
 
                 </br>
                 <input type="button" onclick="cDOSCheeseFriesPlus()" value="+">
-                <input type="text" id="cDOSCheeseFriesCount" name="cDOSCheeseFriesCount" value="1">
+                <input type="text" id="cDOSCheeseFriesCount" name="cDOSCheeseFriesCount" value="1" readonly>
                 <input type="button" onclick="cDOSCheeseFriesMinus()" value="-">
 
             </div>
         </div>
 
-        <div class="menu_price">Price: &#8364;<input type="textarea" id="cDOSCheeseFriesPrice" name="cDOSCheeseFriesPrice" value="4.00" readonly></div>
+        <div class="menu_price">Price: &#8364;
+            <input type="textarea" id="cDOSCheeseFriesPrice" name="cDOSCheeseFriesPrice" value="4.00" readonly>
+        </div>
     </div>
-    <!--
-    Pixel Burger Order Area
-    -->
+
+
     <div class="area_title">Our range of Burgers!</div>
+
+
+    <!-- # BUILD PIXEL BURGER ORDER INPUT -->
+
     <div id="pixelBurgDiv" class="unselected">
         <div class="menu_title">Pixel Burger</div>
         <div class="menu_selector_W">
-            <div class="menu_selector_R">"A hearty helpin' of our Pixelated Pixel Fries!"</div>
-            <div class="menu_selector_L"><label>Add to order <input type="checkbox" name="pixelBurger" id="pixelBurgCheckbox" value="Yes"></label>
+            <div class="menu_selector_R">"A downloaded classic, our world-famous Pixel Burger!"</div>
+            <div class="menu_selector_L">
+                <label>Add to order
+                    <input type="checkbox" name="pixelBurger" id="pixelBurgCheckbox" value="Yes">
+                </label>
                 </br>
 
                 amount:
 
                 </br>
                 <input type="button" onclick="pixelBurgPlus()" value="+">
-                <input type="text" id="pixelBurgCount" name="pixelBurgCount" value="1">
+                <input type="text" id="pixelBurgCount" name="pixelBurgCount" value="1" readonly>
                 <input type="button" onclick="pixelBurgMinus()" value="-">
 
             </div>
         </div>
 
-        <div class="menu_price">Price: &#8364;<input type="textarea" id="pixelBurgPrice" name="pixelBurgPrice" value="3.00" readonly></div>
+        <div class="menu_price">Price: &#8364;
+            <input type="textarea" id="pixelBurgPrice" name="pixelBurgPrice" value="3.00" readonly>
+        </div>
     </div>
-    <!--
-    Extra Life Pixel Burger Order Area
-    -->
+
+
+    <!-- # BUILD EXTRA LIFE BURGER ORDER INPUT -->
+
     <div id="extraLifePixelBurgDiv" class="unselected">
         <div class="menu_title">Extra Life Pixel Burger</div>
         <div class="menu_selector_W">
-            <div class="menu_selector_R">"A hearty helpin' of our Pixelated Pixel Fries!"</div>
-            <div class="menu_selector_L"><label>Add to order <input type="checkbox" name="extraLifePixelBurger" id="extraLifePixelBurgCheckbox" value="Yes"></label>
+            <div class="menu_selector_R">"Just like our regular Pixel Burger, but +1!"</div>
+            <div class="menu_selector_L">
+                <label>Add to order
+                    <input type="checkbox" name="extraLifePixelBurger" id="extraLifePixelBurgCheckbox" value="Yes">
+                </label>
                 </br>
 
                 amount:
 
                 </br>
                 <input type="button" onclick="extraLifePixelBurgPlus()" value="+">
-                <input type="text" id="extraLifePixelBurgCount" name="extraLifePixelBurgCount" value="1">
+                <input type="text" id="extraLifePixelBurgCount" name="extraLifePixelBurgCount" value="1" readonly>
                 <input type="button" onclick="extraLifePixelBurgMinus()" value="-">
 
             </div>
         </div>
 
-        <div class="menu_price">Price: &#8364;<input type="textarea" id="extraLifePixelBurgPrice" name="extraLifePixelBurgPrice" value="4.00" readonly></div>
+        <div class="menu_price">Price: &#8364;
+            <input type="textarea" id="extraLifePixelBurgPrice" name="extraLifePixelBurgPrice" value="4.00" readonly>
+        </div>
     </div>
-    <!-- big byte order area -->
+
+
+    <!-- # BUILD THE BIG BYTE ORDER INPUT -->
+
     <div id="theBigByteDiv" class="unselected">
         <div class="menu_title">The Big Byte</div>
         <div class="menu_selector_W">
-            <div class="menu_selector_R">"A hearty helpin' of our Pixelated Pixel Fries!"</div>
-            <div class="menu_selector_L"><label>Add to order <input type="checkbox" name="theBigByte" id="theBigByteCheckbox" value="Yes"></label>
+            <div class="menu_selector_R">"We said the Extra Life Pixel Burger was +1, well the Big Byte is +2, with our secret burger sauce!"</div>
+            <div class="menu_selector_L">
+                <label>Add to order
+                    <input type="checkbox" name="theBigByte" id="theBigByteCheckbox" value="Yes">
+                </label>
                 </br>
 
                 amount:
 
                 </br>
                 <input type="button" onclick="theBigBytePlus()" value="+">
-                <input type="text" id="theBigByteCount" name="theBigByteCount" value="1">
+                <input type="text" id="theBigByteCount" name="theBigByteCount" value="1" readonly>
                 <input type="button" onclick="theBigByteMinus()" value="-">
 
             </div>
         </div>
 
-        <div class="menu_price">Price: &#8364;<input type="textarea" id="theBigBytePrice" name="theBigBytePrice" value="5.00" readonly></div>
+        <div class="menu_price">Price: &#8364;
+            <input type="textarea" id="theBigBytePrice" name="theBigBytePrice" value="5.00" readonly>
+        </div>
     </div>
-    <!-- theTexasDownload order area -->
+
+
+    <!-- # BUILD THE TEXAS DOWNLOAD ORDER INPUT -->
+
     <div id="theTexasDownloadDiv" class="unselected">
-        <div class="menu_title">The Texas Townload</div>
+        <div class="menu_title">The Texas Download</div>
         <div class="menu_selector_W">
-            <div class="menu_selector_R">"A hearty helpin' of our Pixelated Pixel Fries!"</div>
-            <div class="menu_selector_L"><label>Add to order <input type="checkbox" name="theTexasDownload" id="theTexasDownloadCheckbox" value="Yes"></label>
+            <div class="menu_selector_R">"Our special Texas Download is rendered in 4K, plus it has BBQ sauce!"</div>
+            <div class="menu_selector_L">
+                <label>Add to order
+                    <input type="checkbox" name="theTexasDownload" id="theTexasDownloadCheckbox" value="Yes">
+                </label>
                 </br>
 
                 amount:
 
                 </br>
                 <input type="button" onclick="theTexasDownloadPlus()" value="+">
-                <input type="text" id="theTexasDownloadCount" name="theTexasDownloadCount" value="1">
+                <input type="text" id="theTexasDownloadCount" name="theTexasDownloadCount" value="1" readonly>
                 <input type="button" onclick="theTexasDownloadMinus()" value="-">
 
             </div>
         </div>
 
-        <div class="menu_price">Price: &#8364;<input type="textarea" id="theTexasDownloadPrice" name="theTexasDownloadPrice" value="4.00" readonly></div>
+        <div class="menu_price">Price: &#8364;
+            <input type="textarea" id="theTexasDownloadPrice" name="theTexasDownloadPrice" value="4.00" readonly>
+        </div>
     </div>
-    <!-- cDOSCheesePizza order area -->
+
+
+    <!-- # BUILD C DOS CHEESE PIZZA ORDER INPUT -->
+
     <div class="area_title">Our range of Pizzas!</div>
     <div id="cDOSCheesePizzaDiv" class="unselected">
         <div class="menu_title">C DOS Cheese Pizza</div>
         <div class="menu_selector_W">
-            <div class="menu_selector_R">"A hearty helpin' of our Pixelated Pixel Fries!"</div>
-            <div class="menu_selector_L"><label>Add to order <input type="checkbox" name="cDOSCheesePizza" id="cDOSCheesePizzaCheckbox" value="Yes"></label>
+            <div class="menu_selector_R">"Our secret Pizza Base covered in our equally secret Cheese!"</div>
+            <div class="menu_selector_L">
+                <label>Add to order
+                    <input type="checkbox" name="cDOSCheesePizza" id="cDOSCheesePizzaCheckbox" value="Yes">
+                </label>
                 </br>
 
                 amount:
 
                 </br>
                 <input type="button" onclick="cDOSCheesePizzaPlus()" value="+">
-                <input type="text" id="cDOSCheesePizzaCount" name="cDOSCheesePizzaCount" value="1">
+                <input type="text" id="cDOSCheesePizzaCount" name="cDOSCheesePizzaCount" value="1" readonly>
                 <input type="button" onclick="cDOSCheesePizzaMinus()" value="-">
 
             </div>
         </div>
 
-        <div class="menu_price">Price: &#8364;<input type="textarea" id="cDOSCheesePizzaPrice" name="cDOSCheesePizzaPrice" value="8.00" readonly></div>
+        <div class="menu_price">Price: &#8364;
+            <input type="textarea" id="cDOSCheesePizzaPrice" name="cDOSCheesePizzaPrice" value="8.00" readonly>
+        </div>
     </div>
-    <!-- pepperoniParserPizza order area -->
+
+
+    <!-- # BUILD PEPPERONI PARSER PIZZA ORDER INPUT -->
+
     <div id="pepperoniParserPizzaDiv" class="unselected">
         <div class="menu_title">Pepperoni Parser Pizza</div>
         <div class="menu_selector_W">
-            <div class="menu_selector_R">"A hearty helpin' of our Pixelated Pixel Fries!"</div>
-            <div class="menu_selector_L"><label>Add to order <input type="checkbox" name="pepperoniParserPizza" id="pepperoniParserPizzaCheckbox" value="Yes"></label>
+            <div class="menu_selector_R">"Imagine if you had a C DOS Cheese Pizza, but with Pepperoni!"</div>
+            <div class="menu_selector_L">
+                <label>Add to order
+                    <input type="checkbox" name="pepperoniParserPizza" id="pepperoniParserPizzaCheckbox" value="Yes">
+                </label>
                 </br>
 
                 amount:
 
                 </br>
                 <input type="button" onclick="pepperoniParserPizzaPlus()" value="+">
-                <input type="text" id="pepperoniParserPizzaCount" name="pepperoniParserPizzaCount" value="1">
+                <input type="text" id="pepperoniParserPizzaCount" name="pepperoniParserPizzaCount" value="1" readonly>
                 <input type="button" onclick="pepperoniParserPizzaMinus()" value="-">
 
             </div>
         </div>
 
-        <div class="menu_price">Price: &#8364;<input type="textarea" id="pepperoniParserPizzaPrice" name="pepperoniParserPizzaPrice" value="10.00" readonly></div>
+        <div class="menu_price">Price: &#8364;
+            <input type="textarea" id="pepperoniParserPizzaPrice" name="pepperoniParserPizzaPrice" value="10.00" readonly>
+        </div>
     </div>
-    <!-- hawaiiZonePizza order area -->
+
+
+    <!-- # BUILD HAWAII ZONE PIZZA ORDER INPUT -->
+
     <div id="hawaiiZonePizzaDiv" class="unselected">
         <div class="menu_title">Hawaii Zone Pizza</div>
         <div class="menu_selector_W">
-            <div class="menu_selector_R">"A hearty helpin' of our Pixelated Pixel Fries!"</div>
-            <div class="menu_selector_L"><label>Add to order <input type="checkbox" name="hawaiiZonePizza" id="hawaiiZonePizzaCheckbox" value="Yes"></label>
+            <div class="menu_selector_R">"The exotic flavours of Hawaii, but on a Pizza!"</div>
+            <div class="menu_selector_L">
+                <label>Add to order
+                    <input type="checkbox" name="hawaiiZonePizza" id="hawaiiZonePizzaCheckbox" value="Yes">
+                </label>
                 </br>
 
                 amount:
 
                 </br>
                 <input type="button" onclick="hawaiiZonePizzaPlus()" value="+">
-                <input type="text" id="hawaiiZonePizzaCount" name="hawaiiZonePizzaCount" value="1">
+                <input type="text" id="hawaiiZonePizzaCount" name="hawaiiZonePizzaCount" value="1" readonly>
                 <input type="button" onclick="hawaiiZonePizzaMinus()" value="-">
 
             </div>
         </div>
 
-        <div class="menu_price">Price: &#8364;<input type="textarea" id="hawaiiZonePizzaPrice" name="hawaiiZonePizzaPrice" value="11.00" readonly></div>
+        <div class="menu_price">Price: &#8364;
+            <input type="textarea" id="hawaiiZonePizzaPrice" name="hawaiiZonePizzaPrice" value="11.00" readonly>
+        </div>
     </div>
-    <!-- vegetablePizza order area -->
+
+
+    <!-- # BUILD VEGETABLE PIZZA ORDER INPUT -->
+
     <div id="vegetablePizzaDiv" class="unselected">
         <div class="menu_title">VEGETAble Pizza</div>
         <div class="menu_selector_W">
-            <div class="menu_selector_R">"A hearty helpin' of our Pixelated Pixel Fries!"</div>
-            <div class="menu_selector_L"><label>Add to order <input type="checkbox" name="vegetablePizza" id="vegetablePizzaCheckbox" value="Yes"></label>
+            <div class="menu_selector_R">"IT'S OVER 9000! We're so sorry about this."</div>
+            <div class="menu_selector_L">
+                <label>Add to order
+                    <input type="checkbox" name="vegetablePizza" id="vegetablePizzaCheckbox" value="Yes">
+                </label>
                 </br>
 
                 amount:
 
                 </br>
                 <input type="button" onclick="vegetablePizzaPlus()" value="+">
-                <input type="text" id="vegetablePizzaCount" name="vegetablePizzaCount" value="1">
+                <input type="text" id="vegetablePizzaCount" name="vegetablePizzaCount" value="1" readonly>
                 <input type="button" onclick="vegetablePizzaMinus()" value="-">
 
             </div>
         </div>
 
-        <div class="menu_price">Price: &#8364;<input type="textarea" id="vegetablePizzaPrice" name="vegetablePizzaPrice" value="11.00" readonly></div>
+        <div class="menu_price">Price: &#8364;
+            <input type="textarea" id="vegetablePizzaPrice" name="vegetablePizzaPrice" value="11.00" readonly>
+        </div>
     </div>
 
-    <!-- pixelCola order area -->
+
+    <!-- # BUILD PIXEL COLA ORDER INPUT -->
+
     <div class="area_title">A little something extra!</div>
     <div id="pixelColaDiv" class="unselected">
         <div class="menu_title">Pixel Cola</div>
         <div class="menu_selector_W">
-            <div class="menu_selector_R">"A hearty helpin' of our Pixelated Pixel Fries!"</div>
-            <div class="menu_selector_L"><label>Add to order <input type="checkbox" name="pixelCola" id="pixelColaCheckbox" value="Yes"></label>
+            <div class="menu_selector_R">"We're definitely not re-branding a low-cost Supermarket Cola, sure aren't!"</div>
+            <div class="menu_selector_L">
+                <label>Add to order
+                    <input type="checkbox" name="pixelCola" id="pixelColaCheckbox" value="Yes">
+                </label>
                 </br>
 
                 amount:
 
                 </br>
                 <input type="button" onclick="pixelColaPlus()" value="+">
-                <input type="text" id="pixelColaCount" name="pixelColaCount" value="1">
+                <input type="text" id="pixelColaCount" name="pixelColaCount" value="1" readonly>
                 <input type="button" onclick="pixelColaMinus()" value="-">
 
             </div>
         </div>
 
-        <div class="menu_price">Price: &#8364;<input type="textarea" id="pixelColaPrice" name="pixelColaPrice" value="1.00" readonly></div>
+        <div class="menu_price">Price: &#8364;
+            <input type="textarea" id="pixelColaPrice" name="pixelColaPrice" value="1.00" readonly>
+        </div>
     </div>
-    <!-- pixelOrange order area -->
+
+
+    <!-- # BUILD PIXEL ORANGE ORDER INPUT -->
+
     <div id="pixelOrangeDiv" class="unselected">
         <div class="menu_title">Pixel Orange</div>
         <div class="menu_selector_W">
-            <div class="menu_selector_R">"A hearty helpin' of our Pixelated Pixel Fries!"</div>
-            <div class="menu_selector_L"><label>Add to order <input type="checkbox" name="pixelOrange" id="pixelOrangeCheckbox" value="Yes"></label>
+            <div class="menu_selector_R">"We hand-murdered these Oranges and enfizzled them just for you!"</div>
+            <div class="menu_selector_L">
+                <label>Add to order
+                    <input type="checkbox" name="pixelOrange" id="pixelOrangeCheckbox" value="Yes">
+                </label>
                 </br>
 
                 amount:
 
                 </br>
                 <input type="button" onclick="pixelOrangePlus()" value="+">
-                <input type="text" id="pixelOrangeCount" name="pixelOrangeCount" value="1">
+                <input type="text" id="pixelOrangeCount" name="pixelOrangeCount" value="1" readonly>
                 <input type="button" onclick="pixelOrangeMinus()" value="-">
 
             </div>
         </div>
 
-        <div class="menu_price">Price: &#8364;<input type="textarea" id="pixelOrangePrice" name="pixelOrangePrice" value="1.00" readonly></div>
+        <div class="menu_price">Price: &#8364;
+            <input type="textarea" id="pixelOrangePrice" name="pixelOrangePrice" value="1.00" readonly>
+        </div>
     </div>
-    <!-- pixelIceCream order area -->
+
+
+    <!-- # BUILD PIXEL ICE CREAM ORDER INPUT -->
+
     <div id="pixelIceCreamDiv" class="unselected">
-        <div class="menu_title">Hawaii Zone Pizza</div>
+        <div class="menu_title">Pixel Ice Cream</div>
         <div class="menu_selector_W">
-            <div class="menu_selector_R">"A hearty helpin' of our Pixelated Pixel Fries!"</div>
-            <div class="menu_selector_L"><label>Add to order <input type="checkbox" name="pixelIceCream" id="pixelIceCreamCheckbox" value="Yes"></label>
+            <div class="menu_selector_R">"Our super secret Pixel Ice Cream complete with large cubes of Sugar!"</div>
+            <div class="menu_selector_L">
+                <label>Add to order
+                    <input type="checkbox" name="pixelIceCream" id="pixelIceCreamCheckbox" value="Yes">
+                </label>
                 </br>
 
                 amount:
 
                 </br>
                 <input type="button" onclick="pixelIceCreamPlus()" value="+">
-                <input type="text" id="pixelIceCreamCount" name="pixelIceCreamCount" value="1">
+                <input type="text" id="pixelIceCreamCount" name="pixelIceCreamCount" value="1" readonly>
                 <input type="button" onclick="pixelIceCreamMinus()" value="-">
 
             </div>
         </div>
 
-        <div class="menu_price">Price: &#8364;<input type="textarea" id="pixelIceCreamPrice" name="pixelIceCreamPrice" value="3.00" readonly></div>
+        <div class="menu_price">Price: &#8364;
+            <input type="textarea" id="pixelIceCreamPrice" name="pixelIceCreamPrice" value="3.00" readonly>
+        </div>
     </div>
-    <!-- pixelCookies order area -->
+
+
+    <!-- # BUILD PIXEL COOKIES ORDER INPUT -->
+
     <div id="pixelCookiesDiv" class="unselected">
-        <div class="menu_title">Hawaii Zone Pizza</div>
+        <div class="menu_title">Pixel Cookies</div>
         <div class="menu_selector_W">
-            <div class="menu_selector_R">"A hearty helpin' of our Pixelated Pixel Fries!"</div>
-            <div class="menu_selector_L"><label>Add to order <input type="checkbox" name="pixelCookies" id="pixelCookiesCheckbox" value="Yes"></label>
+            <div class="menu_selector_R">"Freshly baked Chocolate Chip cookies, what more can we say?"</div>
+            <div class="menu_selector_L">
+                <label>Add to order
+                    <input type="checkbox" name="pixelCookies" id="pixelCookiesCheckbox" value="Yes">
+                </label>
                 </br>
 
                 amount:
 
                 </br>
                 <input type="button" onclick="pixelCookiesPlus()" value="+">
-                <input type="text" id="pixelCookiesCount" name="pixelCookiesCount" value="1">
+                <input type="text" id="pixelCookiesCount" name="pixelCookiesCount" value="1" readonly>
                 <input type="button" onclick="pixelCookiesMinus()" value="-">
 
             </div>
         </div>
 
-        <div class="menu_price">Price: &#8364;<input type="textarea" id="pixelCookiesPrice" name="pixelCookiesPrice" value="3.00" readonly></div>
+        <div class="menu_price">Price: &#8364;
+            <input type="textarea" id="pixelCookiesPrice" name="pixelCookiesPrice" value="3.00" readonly>
+        </div>
     </div>
-
 
     <div class="area_title">Remember, order 4 unique items or more for a 10% discount!</div>
 
